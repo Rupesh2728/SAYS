@@ -13,7 +13,7 @@ editbtn.addEventListener('click',function(){
 
 async function info(){
     
-    let res1 = await fetch('http://localhost:3000/usertheatre/getreffnum', {
+    let res1 = await fetch('http://localhost:3000/usertheatreinfo/getreffnum', {
        method: 'get',
        headers: {
            "Content-Type": 'application/json'
@@ -27,7 +27,7 @@ async function info(){
         treffnum:treffnum,
     }
 
-    let res = await fetch('http://localhost:3000/usertheatre/getinfo', {
+    let res = await fetch('http://localhost:3000/usertheatreinfo/getinfo', {
        method: 'post',
        body: JSON.stringify(obj),
        headers: {

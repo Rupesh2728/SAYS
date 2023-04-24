@@ -79,7 +79,7 @@ router.post("/", async function (req, res) {
     }
   });
   
-  router.post("/usertheatre/getinfo", async function (req, res) {
+  router.post("/getinfo", async function (req, res) {
     let treffnum = req.body.treffnum;
     let value = await userTinfo.find({ tReferenceNumber: treffnum });
     if (value.length == 0) res.json({ k: 1 });
@@ -90,7 +90,7 @@ router.post("/", async function (req, res) {
       });
   });
   
-  router.get("/usertheatre/getreffnum", function (req, res) {
+  router.get("/getreffnum", function (req, res) {
     res.json({ treffnum: req.cookies.currtheatrereffnum });
   });
 

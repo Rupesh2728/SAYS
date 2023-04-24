@@ -188,7 +188,7 @@ function decrementItem() {
 function totalAmount() {
     var sum = 0;
     for (let i = 0; i < cartData.length; i++) {
-        sum += cartData[i].price;
+        sum +=parseInt( cartData[i].price);
     }
 
     document.getElementById('totalitemnum').innerText = cartData.length;

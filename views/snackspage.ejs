@@ -137,7 +137,7 @@
             <div id="biryani" class="d-biryani">
               <p id="category-name">Popcorn</p>
               <% for(let i=0;i<fooditem.length;i++){ %>
-                <% if(fooditem[i]['category']=='popcorn' ){ %>
+                <% if(fooditem[i]['category']=='Popcorn' ){ %>
                   <div class="item-card">
                     <img src="<%=fooditem[i]['imgurl']%>">
                     <div class="foodinfo">
@@ -164,11 +164,11 @@
             </div>
 
             <div id="chicken" class="d-chicken">
-              <p id="category-name">Chicken Delicious</p>
+              <p id="category-name">Drinks</p>
 
 
               <% for(let i=0;i<fooditem.length;i++){ %>
-                <% if(fooditem[i]['category']=='Cool Drinks' || fooditem[i]['category']=='Water Bottle' ){ %>
+                <% if(fooditem[i]['category']=='Soft Drinks' || fooditem[i]['category']=='Water Bottle' ){ %>
                   <div class="item-card">
                     <img src="<%=fooditem[i]['imgurl']%>">
                     <div class="foodinfo">
@@ -195,7 +195,7 @@
                         <p id="category-name">Pizza's and Burger's</p>
 
                         <% for(let i=0;i<fooditem.length;i++){ %>
-                          <% if(fooditem[i]['category']=='pizza' || fooditem[i]['category']=='Burger' ){ %>
+                          <% if(fooditem[i]['category'].includes('Pizza') || fooditem[i]['category'].includes('Burger') ){ %>
                             <div class="item-card">
                               <img src="<%=fooditem[i]['imgurl']%>">
                               <div class="foodinfo">
@@ -225,7 +225,7 @@
                         <p id="category-name">Samosa and Puff's</p>
 
                         <% for(let i=0;i<fooditem.length;i++){ %>
-                          <% if(fooditem[i]['category']=='Samosa' || fooditem[i]['category']=='puff' ){ %>
+                          <% if(fooditem[i]['category'].includes('Samosa') || fooditem[i]['category'].includes('puff') ){ %>
                             <div class="item-card">
                               <img src="<%=fooditem[i]['imgurl']%>">
                               <div class="foodinfo">
