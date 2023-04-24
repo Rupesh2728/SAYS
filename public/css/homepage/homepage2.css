@@ -1,0 +1,943 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #49b5e7;
+  }
+  
+  a:hover {
+    color: #76c7ed;
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Dosis", sans-serif;
+  }
+  
+  /*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #49b5e7;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i 
+  {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .back-to-top:hover {
+    background: #6dc4ec;
+    color: #fff;
+  }
+  
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /*--------------------------------------------------------------
+  # firstsection Section
+  --------------------------------------------------------------*/
+  
+@media screen and (min-width:1200px)
+{  
+  #firstsection {
+    width: 100%;
+    height: 40rem;
+    /* background: #161d2f; */
+    background-image: url('https://c1.wallpaperflare.com/preview/330/534/353/seat-chair-theatre-dark.jpg');
+  }
+  
+  #firstsection .container {
+    padding-top: 4px;
+  }
+
+  .slidebarsnacks,.slidebartickets
+  {
+     width:38rem;
+     margin-left:1rem;
+  }
+  
+
+  #firstsection .firstsection-img {
+    width:50%;
+  }
+
+  .firstsection-img .slidebartickets
+  {
+    width:100%;
+  }
+   
+
+
+#firstsection h1 {
+  margin: 0;
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 50px;
+  color: gold;
+  text-transform: uppercase;
+}
+
+#firstsection h3{
+  color:white;
+  font-size:1.7rem;
+  margin-top: 1rem;
+}
+
+#firstsection .booknowbtn,#firstsection .ordersnackbtn{
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin-top: 25px;
+  color: #fff;
+  background: #49b5e7;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#firstsection .booknowbtn:hover,#firstsection .ordersnackbtn:hover {
+  background: #76c7ed;
+}
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) 
+{  
+  #firstsection {
+    width: 100%;
+    height: 27rem;
+    background-image: url('https://c1.wallpaperflare.com/preview/330/534/353/seat-chair-theatre-dark.jpg');
+  }
+  
+  #firstsection .container {
+    padding-top: 4px;
+  }
+
+  .slidebarsnacks,.slidebartickets
+  {
+     width:38rem;
+     margin-left:1rem;
+  }
+  
+
+  #firstsection .firstsection-img {
+    width:50%;
+  }
+
+  .firstsection-img .slidebartickets
+  {
+    width:100%;
+  }
+   
+
+
+#firstsection h1 {
+  margin: 0;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 45px;
+  color: gold;
+  text-transform: uppercase;
+}
+
+#firstsection h3{
+  color:white;
+  font-size:1.4rem;
+  margin-top: 1rem;
+}
+
+#firstsection .booknowbtn,#firstsection .ordersnackbtn {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin-top: 25px;
+  color: #fff;
+  background: #49b5e7;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#firstsection .booknowbtn:hover,#firstsection .ordersnackbtn:hover {
+  background: #76c7ed;
+}
+}
+  
+@media screen and (min-width:769px) and (max-width:991px)
+{
+  #firstsection {
+    height: 45rem;
+    background-image: url('https://c1.wallpaperflare.com/preview/330/534/353/seat-chair-theatre-dark.jpg');
+    width:110%;
+  }
+
+  .sponsers{
+    width:110%
+  }
+
+
+  #firstsection .firstsection-img {
+    width:80%;
+    margin-left:5rem;
+  }
+
+   .contentdiv h1
+   {
+      width:39rem;
+   }
+   
+#firstsection h1 {
+   margin-left:4rem;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 40px;
+  color: gold;
+  text-transform: uppercase;
+}
+
+#firstsection h3{
+  margin-left:4rem;
+  color:white;
+  font-size:1.4rem;
+  margin-top: 1rem;
+}
+
+#firstsection .booknowbtn,#firstsection .ordersnackbtn {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  margin-left:17rem;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin-top: 25px;
+  color: #fff;
+  background: #49b5e7;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#firstsection .ordersnackbtn
+{
+  margin-left:14rem;
+}
+
+#firstsection .booknowbtn:hover,#firstsection .ordersnackbtn:hover {
+  background: #76c7ed;
+}
+
+
+}
+  
+  
+  @media screen and (max-width: 768px) and (min-width:594px) 
+  {
+
+      .mobilenavbarfirstsection .container
+      {
+        margin-left:0;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+    #mobilesubnavbarfirstsection {
+      margin:0;
+      height: 40rem;
+      background-image: url('https://c1.wallpaperflare.com/preview/330/534/353/seat-chair-theatre-dark.jpg');
+      padding-top:0;
+    }
+
+    #mobilesubnavbarfirstsection .row .contentdiv
+    {
+      width:35rem;
+    }
+  
+  
+    #mobilesubnavbarfirstsection .firstsection-img {
+      width:85%;
+      margin-left:2rem;
+    }
+  
+     .contentdiv h1
+     {
+        width:35rem;
+     }
+     
+  #mobilesubnavbarfirstsection h1 {
+    margin-left:0rem;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 35px;
+    color: gold;
+    text-transform: uppercase;
+  }
+  
+  #mobilesubnavbarfirstsection h3{
+    margin-left:0rem;
+    color:white;
+    font-size:1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  #mobilesubnavbarfirstsection .booknowbtn {
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    margin-left:12rem;
+    border-radius: 3px;
+    transition: 0.5s;
+    margin-top: 25px;
+    color: #fff;
+    background: #49b5e7;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+
+
+  #firstsection {
+    height: 40rem;
+    background-image: url('https://c1.wallpaperflare.com/preview/330/534/353/seat-chair-theatre-dark.jpg');
+  }
+
+   .contentdiv h1
+   {
+    width:35rem;
+   }
+   
+#firstsection h1 {
+  margin-left:0rem;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 35px;
+    color: goldenrod;
+    text-transform: uppercase;
+}
+
+#firstsection h3
+{
+  margin-left:0rem;
+    color:lightpink;
+    font-size:1.2rem;
+    margin-top: 0.5rem;
+}
+
+#firstsection .booknowbtn,#firstsection .ordersnackbtn {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin-top: 23px;
+  color: #fff;
+  background: #49b5e7;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#firstsection .ordersnackbtn
+{
+  margin-left:10rem;
+}
+
+#firstsection .booknowbtn:hover,#firstsection .ordersnackbtn:hover {
+  background: #76c7ed;
+}
+
+#firstsection
+{
+  width:120%;
+}
+
+.sponsers
+{
+  width:120%;
+}
+
+#counts,#footer
+{
+  width:120%;
+}
+
+
+.mobilenavbar
+{
+  width:120%;
+}
+
+
+ #firstsection .row .firstsection-img {
+  width:80%;
+  margin-left:2rem;
+}
+
+.topsection
+{
+  position: absolute;
+  visibility: hidden;
+}
+
+#about
+{
+   position: relative;
+}
+
+
+
+
+
+
+  }
+
+
+
+  @media screen and (max-width: 593px)
+  {
+      .mobilenavbarfirstsection .container
+      {
+        margin-left:0;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+    #mobilesubnavbarfirstsection {
+      /* margin-left: 0.55rem; */
+      height: 40rem;
+      background-image: url('https://c1.wallpaperflare.com/preview/330/534/353/seat-chair-theatre-dark.jpg');
+      padding-top:0;
+      padding-left: 0;
+    }
+
+    #mobilesubnavbarfirstsection .row .contentdiv
+    {
+      width:70%;
+    }
+  
+  
+    #mobilesubnavbarfirstsection .firstsection-img {
+      width:80%;
+      margin-left:1rem;
+    }
+  
+    #mobilesubnavbarfirstsection .contentdiv h1
+     {
+        width:100%;
+        padding-left: 2rem;
+     }
+
+  
+
+
+
+     
+  #mobilesubnavbarfirstsection h1 {
+    margin-left:0rem;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    color: gold;
+    text-transform: uppercase;
+  }
+  
+  #mobilesubnavbarfirstsection h3{
+    padding-left:1rem;
+    color:white;
+    font-size:0.9rem;
+    margin-top: 0.5rem;
+  }
+  
+  #mobilesubnavbarfirstsection .booknowbtn {
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 4px 20px;
+    margin-left:4rem;
+    border-radius: 3px;
+    transition: 0.5s;
+    margin-top: 25px;
+    color: #fff;
+    background: #49b5e7;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+
+  #firstsection {
+    height: 40rem;
+    background-image: url('https://c1.wallpaperflare.com/preview/330/534/353/seat-chair-theatre-dark.jpg');
+  } 
+
+  #firstsection .firstsection-img
+  {
+    width:50%;
+    margin-left:1rem;
+  }
+
+  #firstsection .contentdiv h1
+     {
+        width:80%;
+     }
+
+     #firstsection .ordersnackbtn
+     {
+        margin-left: 0;
+     }
+
+     #firstsection .container,.sponsers .container,#counts .container,#footer .footer-top .container{
+      margin-left:0;
+     }
+
+
+     #sponsers .row div
+     {
+         width:15rem;
+         padding-left:1rem;
+     }
+
+     #sponsers h2
+     {
+       width:10rem;
+       margin-left: 7rem;
+     }
+
+     #firstsection .row .firstsection-img {
+      width:80%;
+      margin-left:2rem;
+    }
+    
+
+    
+
+ #firstsection
+{
+  width:120%;
+}
+
+.sponsers
+{
+  width:120%;
+}
+
+.sponsers .row div img{
+   width:50%;
+   height: 50%;
+}
+
+.sponsers .row div{
+  width:40%;
+}
+
+.sponsers .row{
+  padding-left: 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#counts,#footer
+{
+  width:120%;
+}
+
+#counts .title
+{
+   width:90%;
+}
+
+#counts .title h3
+{
+   font-size: 1.5rem;
+}
+
+#counts .row{
+  width:80%;
+}
+
+
+
+
+
+  #firstsection .firstsection-img {
+    width:50%;
+    left:0rem;
+   margin-right: 2rem;
+  }
+
+   .contentdiv h1
+   {
+    width:35rem;
+   }
+   
+ #firstsection h1 {
+  margin-left:0rem;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 35px;
+    color: gold;
+    text-transform: uppercase;
+}
+
+#firstsection h3{
+  margin-left:0rem;
+    color:white;
+    font-size:1.2rem;
+    margin-top: 0.5rem;
+}
+
+#firstsection .booknowbtn,#firstsection .ordersnackbtn {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 5px 23px;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin-top: 23px;
+  color: #fff;
+  background: #49b5e7;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#firstsection .ordersnackbtn
+{
+  margin-left:10rem;
+}
+
+#firstsection .booknowbtn:hover,#firstsection .ordersnackbtn:hover {
+  background: #76c7ed;
+}
+
+.topsection
+{
+  position: absolute;
+  visibility: hidden;
+}
+
+#about
+{
+   position: relative;
+}
+
+  }
+  
+  /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  section {
+   padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background-color: #f4fbfe;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #0f394c;
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+  }
+  
+  /*--------------------------------------------------------------
+  # About
+  --------------------------------------------------------------*/
+  
+  /* @media screen and (max-width:991px){
+       firstsection
+   } */
+  
+  /*--------------------------------------------------------------
+  # Counts
+  --------------------------------------------------------------*/
+  .counts {
+    background: url("../img/counts-bg.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 80px 0 60px 0;
+    position: relative;
+  }
+  
+  .counts::before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .counts .title {
+    position: relative;
+    color: #0f394c;
+    margin-bottom: 40px;
+  }
+  
+  .counts .title h3 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  
+  .counts .counters span {
+    font-size: 44px;
+    font-weight: 700;
+    display: block;
+    color: #49b5e7;
+    font-family: "Dosis", sans-serif;
+  }
+  
+  .counts .counters p {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 15px;
+    color: #444444;
+  }
+  
+  @media (min-width: 1200px) {
+    .counts {
+      background-attachment: fixed;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # sponsers
+  --------------------------------------------------------------*/
+  .sponsers .sponsers-wrap {
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+  }
+  
+  .sponsers .client-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background:black;
+    height: 120px;
+  }
+
+  .sponsers{
+    background-color: black;
+  }
+
+  .sponsers .section-title h2{
+    color:gold;
+  }
+  
+  .sponsers .client-logo img {
+    height: 80%;
+    transition: 0.3s;
+  }
+  
+  .sponsers .client-logo:hover img {
+    filter: none;
+    transform: scale(1.2);
+  }
+  
+  .sponsers img {
+    transition: all 0.4s ease-in-out;
+  }
+  
+
+  /*--------------------------------------------------------------
+  # Contact
+  --------------------------------------------------------------*/
+  .contact .info {
+    width: 100%;
+    background: #fff;
+  }
+  
+  .contact .info i {
+    font-size: 20px;
+    color: #49b5e7;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #ebf7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #0f394c;
+  }
+  
+  .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #2079a1;
+  }
+  
+  .contact .info .email,
+  .contact .info .phone {
+    margin-top: 40px;
+  }
+  
+  .contact .info .email:hover i,
+  .contact .info .address:hover i,
+  .contact .info .phone:hover i {
+    background: #49b5e7;
+    color: #fff;
+  }
+  
+  .contact .php-email-form {
+    width: 100%;
+    background: #fff;
+  }
+  
+  .contact .php-email-form .form-group {
+    padding-bottom: 8px;
+  }
+  
+  .contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .error-message br+br {
+    margin-top: 25px;
+  }
+  
+  .contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+  .contact .php-email-form input {
+    height: 44px;
+  }
+  
+  .contact .php-email-form textarea {
+    padding: 10px 12px;
+  }
+  
+  .contact .php-email-form button[type=submit] {
+    background: #49b5e7;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  
+  .contact .php-email-form button[type=submit]:hover {
+    background: #1da2e0;
+  }
+  
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  

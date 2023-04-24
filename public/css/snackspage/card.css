@@ -1,0 +1,365 @@
+.item-card
+{
+    width: 200px;
+    height: 290px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all step-end;
+    z-index: 1;
+    /* border: 2px red solid; */
+    background-color: #221f1f;
+}
+
+#item-card img{
+    transition: 0.5 ease-in-out;
+}
+
+
+#item-card img:hover{
+    transform: scale(1.2);
+}
+
+#item-name,#item-price
+{
+    color: white;
+}
+
+
+.fa-star span
+{
+    color: white;
+}
+
+.fa-star 
+{
+  color: gold;
+}
+
+.fa-plus
+{
+    color:red;
+    background-color: white;
+    border-radius: 50%;
+    padding:4px;
+}
+
+
+
+.item-card img{
+    width:100%;
+    height: 10rem;
+}
+
+.card-top
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top:2rem;
+}
+
+.card-top span{
+    margin-left:0.25rem;
+}
+
+
+#item-name{
+    margin: 5px 0;
+    font-weight: 600;
+    color: white;
+    font-size: 18px;
+}
+#item-price{
+
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top:0.3rem;
+}
+
+#item-price span{
+    padding-left:0.2rem;
+}
+
+
+.foodinfo
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+@media screen and (max-width : 800px) and (-webkit-min-device-pixel-ratio: 2){
+    /* .container{
+        display: none;
+    }
+    #mobile-view{
+        display: grid;
+        grid-template-rows: 120px 1fr 50px;
+        height: 100%;
+        overflow: hidden;
+        
+        width: 100vw;
+    }
+    .mobile-top{
+        padding: 5px 15px;
+        background: white;
+        z-index: 1;
+    }
+    .item-container{
+        overflow-y: scroll;
+    }
+    .logo-box,.top-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #logo{
+        width: 90px;
+        height: 70px;
+    }
+    .logo-box .your-address{
+        font-size: 18px;
+        width: 150px;
+        color: crimson;
+        text-transform: capitalize;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }  
+    .m-cart-toggle{
+        color: white;
+        background: lightcoral;
+    }
+    .category-header{
+        display: flex;
+        width: 100vw;
+        overflow-x: scroll;
+        position: sticky;
+        top: 0;
+        background: white;
+        z-index: 1;
+        border-bottom: 1px solid rgb(219, 219, 219);
+        margin: 0;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+    }
+    .toggle-category{
+        display: none;
+        position: relative;
+    }
+    .list-card{
+        margin: 0 10px;
+        text-align: center;
+    }
+    .list-card img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .list-card:hover{
+        background: none;
+    }
+    .list-card:hover img{
+        transform: none;
+        transition: none;
+    }
+    .list-name{
+        margin: 5px 0;
+        color: coral;
+        width: max-content;
+        font-size: 16px;
+    }
+    #food-items{        
+        padding: 5px 10px;
+    }
+
+    .mobile-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 15px;
+        background: white;
+        border-top: 1px solid rgb(219, 219, 219);
+    }
+    .mobile-footer{
+        color: indianred;
+        text-transform: uppercase;
+        font-size: 16px;
+        position: static;
+    }
+
+    #category-name{
+        font-size: 25px;
+        font-family: 'Aclonica', sans-serif;
+    }
+    #item-card{
+        width: 150px;
+        height: 200px;
+    }
+    #item-card img{
+        width: 100px;
+        height: 100px;
+    }
+    #item-name,#item-price{
+        font-size: 16px;
+    }
+    .list-card
+    {
+        flex-direction: column;
+    }
+    #cart-page{
+        margin: 3px 0;
+        padding: 10px 5px;
+        padding-bottom: 30px;
+        border-top: 1px solid rgb(219, 219, 219);
+    }
+    #cart-page table thead td{
+        font-size: 20px;
+    }
+    #cart-page table tbody td{
+        font-size: 18px;
+    }
+    #cart-page table tbody img{
+        width: 60px;
+        height: 60px;
+    }
+    #cart-title{
+        font-size: 25px;
+        display: inline-block;
+        font-family: 'Aclonica', sans-serif;
+    }
+    #m-total-amount{
+        display: inline-block;
+        color: lightcoral;
+        padding: 5px 10px;
+        margin: 0;
+        border:  1px solid lightcoral;
+        float: right;
+    }
+    .cart-btn{
+        font-size: 14px;
+        background: lightcoral;
+        padding: 8px 15px;
+        margin: auto;
+    }
+    .btn-box{
+        text-align: center;
+    } */
+    
+}
+@media screen and (max-width:504px){
+    
+.item-card
+{
+    width: 43vw;
+    height: 260px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all step-end;
+    position: relative;
+    z-index: 1;
+    /* border: 2px red solid; */
+    background-color: #221f1f;
+}
+
+#item-card img{
+    transition: 0.5 ease-in-out;
+}
+
+
+#item-card img:hover{
+    transform: scale(1.2);
+}
+
+#item-name,#item-price
+{
+    color: white;
+}
+
+
+.fa-star span
+{
+    color: white;
+    font-size: 4vw;
+}
+
+.fa-star 
+{
+  color: gold;
+}
+
+.fa-plus
+{
+    color:red;
+    background-color: white;
+    border-radius: 50%;
+    padding:2px;
+    
+}
+
+
+
+.item-card img{
+    width:90%;
+    height: 8rem;
+    margin-left: 0.5rem;
+}
+
+.card-top
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top:1rem;
+}
+
+.card-top span{
+    margin-left:0.25rem;
+}
+
+
+#item-name{
+    margin: 5px 0;
+    font-weight: 600;
+    color: white;
+    font-size: 4.5vw;
+}
+#item-price{
+
+    color: white;
+    font-weight: 600;
+    font-size: 4.5vw;
+    margin-top:0.3rem;
+}
+
+#item-price span{
+    padding-left:0.2rem;
+}
+
+
+.foodinfo
+{
+    display: block;
+    justify-content: space-between;
+}
+
+.util{
+ width:10rem;
+};
+}
+
+
+
+
+
+
+
+
+

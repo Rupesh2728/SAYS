@@ -1,0 +1,627 @@
+@media screen and (min-width:1376px)
+{
+    .mainnavbar
+    {
+        width: 50rem;
+        height: 4rem;
+        margin-top:2rem;
+        margin-bottom: 1rem;
+        border-radius: 8rem;
+        display: flex;
+        justify-content: space-between;
+        border:1px solid goldenrod;
+    }
+
+    .laptopnavbar
+    { 
+         background-color: #181616;
+        position: relative;
+        /* position: -webkit-sticky;
+        position: sticky;
+        top: 0; */
+    }
+
+
+
+    .mobilenavbar
+    {   
+        visibility: hidden;
+        position:absolute;
+        z-index: -1;
+    }
+    
+    
+    .mainnavbar{
+       background: black;
+      }
+    
+    .mainlogo
+    {
+          width:8rem;
+          height: 8rem;
+          margin-top:0.5rem;
+          margin-left:0.5rem;
+          border-radius: 50%;
+          border:solid 4.5px lightblue;
+    }
+    
+    .sayslogo
+    {  
+        
+    
+        margin-left:2rem;
+        margin-top: 0.5rem;
+        width: 18rem;
+        height: 10rem;
+    }
+
+    
+    
+    
+    .homelogo
+    {
+        color: gold;
+    }
+    
+    .profile
+    {
+        width:3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border:3.5px solid green;
+    }
+    
+    .navtext
+    {
+        color: gold;  
+    }
+    
+    .navbar-toggler-icon,.navbar-toggler
+    {
+        color: gold;
+    }
+    
+    .location
+    { 
+         margin-top:2rem;
+    }
+    
+    .location:hover
+    {
+         cursor: pointer;
+         background-color: #181616;
+         /* border:solid 1px #161d2f; */
+    }
+    
+    .location button{
+        background-color: #181616 !important;
+       color: gold !important;
+       border:0 !important;
+       font-size: 1.1rem !important;
+       width: 11rem !important;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva',' Verdana',' sans-serif' !important;
+       text-transform: lowercase !important;
+    }
+    
+    .optionslist
+    {  
+        color:green;
+        /* hsl(216, 50%, 16%); */
+       background-color: white;
+    }
+    
+    .loclogo
+    {   margin-top:2.7rem;
+        color:red;
+    }
+    
+    .loc
+    {
+        display: flex;
+    }
+
+    .colmn3
+    {
+        width: 5rem;
+    }
+
+}
+
+
+@media screen and (min-width:992px) and (max-width:1375px)
+{  
+    .mainnavbar
+    {    
+        width: 30rem;
+        height: 4rem;
+        margin-top:2rem;
+        margin-bottom: 1rem;
+        border-radius: 8rem;
+        display: flex;
+        justify-content: space-between;
+        border:2px solid goldenrod;
+    }
+
+    .laptopnavbar
+    {    background-color: #181616;
+        position: relative;
+        /* position: -webkit-sticky;
+        position: sticky;
+        top: 0; */
+    }
+
+    .mobilenavbar
+    {   visibility: hidden;
+        position:absolute;
+        z-index: -1;
+    }
+    
+    body{
+        background-color: #161d2f;
+    }
+    
+    .mainnavbar{
+        background: black;
+       }
+    
+    /* .mainlogo
+    {
+          width:8rem;
+          height: 8rem;
+          margin-top:0.5rem;
+          margin-left:0.5rem;
+          border-radius: 50%;
+          border:solid 4.5px lightblue;
+    }
+     */
+    .sayslogo
+    {  
+         /* margin-left:0.75rem;
+        margin-top: 0.5rem;
+        width: 11rem;
+        height: 7rem; */
+    
+        margin-left:1rem;
+        margin-top: 0.5rem;
+        width: 12rem;
+        height: 6rem;
+    }
+
+    
+    
+    
+    .homelogo
+    {
+        color: gold;
+    }
+    
+    .profile
+    {
+        width:2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        border:2.5px solid green;
+    }
+    
+    .navtext
+    {
+        color: gold;  
+    }
+    
+    .navbar-toggler-icon,.navbar-toggler
+    {
+        color: gold;
+    }
+    
+    .location
+    { 
+         margin-top:2rem;
+         background-color: #181616;
+    }
+    
+    .location:hover{
+         cursor: pointer;
+         background-color: #181616;
+         /* border:solid 1px #161d2f; */
+    }
+    
+    .location button{
+        background-color: #181616 !important;
+       color: gold !important;
+       border:0 !important;
+       font-size: 1.1rem !important;
+       width: 10.5rem !important;
+    }
+    
+    .optionslist
+    {  
+        color:green;
+        /* hsl(216, 50%, 16%); */
+       background-color: white;
+    }
+    
+    .loclogo
+    {   margin-top:2.7rem;
+        color:red;
+    }
+    
+    .loc
+    {
+        display: flex;
+    }
+}
+
+
+@media screen and (min-width:769px) and (max-width:991px)
+{
+    .mainnavbar
+    {
+        width: 22rem;
+        height: 4rem;
+        margin-top:2rem;
+        margin-bottom: 1rem;
+        border-radius: 8rem;
+        display: flex;
+        justify-content: space-between;
+        border:2px solid goldenrod;
+    }
+
+    .laptopnavbar
+    {    background-color: #181616;
+        position: relative;
+        /* position: -webkit-sticky;
+        position: sticky;
+        top: 0; */
+    }
+
+    .mobilenavbar
+    {   visibility: hidden;
+        position:absolute;
+        z-index: -1;
+    }
+    
+    
+    .mainnavbar{
+       background-color: black;
+      }
+    
+    .sayslogo
+    {  
+        margin-left:0.25rem;
+        margin-top: 0.25rem;
+        width: 11rem;
+        height: 6rem;
+    }
+
+    .colmn1
+    {
+        width:10.7rem;
+    }
+
+    .colmn3
+    {
+         width:5rem;
+    }
+
+    .homelogo
+    {
+        color: gold;
+    }
+    
+    .profile
+    {   
+        width:3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border:3.5px solid green;
+    }
+   
+    .navtext
+    {
+        color: gold;  
+    }
+    
+    .navbar-toggler-icon,.navbar-toggler
+    {
+        color: gold;
+        padding-bottom: 2.1rem;
+    }
+    
+    .location
+    { 
+         margin-top:2rem;
+    }
+
+    
+    .location:hover{
+         cursor: pointer;
+         background-color: #161d2f;
+         /* border:solid 1px #161d2f; */
+    }
+    
+    .location button{
+       background-color: black !important;
+       color: gold !important;
+       border:0 !important;
+       font-size: 1rem !important;
+       width: 8.8rem !important;
+    }
+    
+    .optionslist
+    {  
+        color:green;
+        /* hsl(216, 50%, 16%); */
+       background-color: white;
+    }
+    
+    .loclogo
+    {   margin-top:2.7rem;
+        color:red;
+    }
+    
+    .loc
+    {
+        display: flex;
+    }    
+}
+
+
+
+@media screen and (min-width:425px) and (max-width:768px){
+
+ 
+
+    .sayslogo
+    {
+        width:11rem;
+        height: 5.5rem;
+    }
+
+    .profile
+    {
+        width:3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border:3.5px solid green;
+    }
+
+    .location
+    { 
+         margin-top:2rem;
+    }
+
+    .ticketsdiv
+    {
+        display: none;
+    }
+    /* .location:hover{
+         cursor: pointer;
+         background-color: #161d2f;
+         border:solid 1px #161d2f;
+    } */
+
+    .mobilenavbar
+        {  
+          width:115%;
+        }
+
+        .mobilenavcontent
+        {
+          padding-left:0;
+        }
+
+   
+    .homelogo
+    {
+        color: gold;
+    }
+
+    .location
+    {   top:0;
+        margin-left:0.9rem;
+        margin-top: 0.4rem;
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .location button{
+        background-color: #181616 !important;
+       color: gold !important;
+       border:0 !important;
+       font-size: 1.1rem !important;
+       width: 10.5rem !important;
+    }
+    
+    .optionslist
+    {  
+        color:green;
+        /* hsl(216, 50%, 16%); */
+       background-color: white;
+    }
+    
+    .loclogo
+    {   margin-top:2.7rem;
+        color:red;
+    }
+    
+    .loc
+    {
+        display: flex;
+    }
+
+    .laptopnavbar
+    {   visibility: hidden;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+
+    .mobilenavbar
+    {    background-color: #181616;
+        position:relative;  
+        position: -webkit-sticky;
+        position: sticky;
+        /* top: 0; */
+        left: 0;
+    }
+
+    /* .navcontent
+    {
+        mobilenavbaritemisplay: inline;
+    } */
+
+    .mobilesubnavbar
+    {
+        display: flex;
+    }
+
+    .mobilenavcontent
+    {
+        margin-top: 2rem;
+    }
+
+    .mobilenavcontent a:link{
+         color: gold;
+         text-decoration: none;
+    };
+
+   
+
+  
+    body{
+        background-color: #181616;
+    }
+
+
+}
+
+
+@media screen and (min-width:51px) and (max-width:424px){
+
+    body{
+        background-color: #181616;
+    }
+
+    .sayslogo
+    {
+        width:8rem;
+        height: 4.5rem;
+    }
+
+    .mobilenavbar
+        {
+          width:100%;
+        }
+
+        .mobilenavcontent
+        {
+          padding-left:0;
+        }
+
+    .profile
+    {
+        width:5rem !important;
+        height: 3rem;
+        border-radius: 50%;
+        border:3.5px solid green;
+    }
+
+    .location
+    { 
+         margin-top:2.5rem;
+    }
+    
+    /* .location:hover{
+         cursor: pointer;
+         background-color: #161d2f;
+         border:solid 1px #161d2f;
+    } */
+
+    .homelogo
+    {
+        color: gold;
+        margin-bottom: 1rem;
+    }
+
+    .mobilenavbarfirstsection
+    {
+        padding-left: 1rem;
+    }
+    
+
+    .location
+    {   top:0;
+        margin-left:0.9rem;
+        margin-top: 0.4rem;
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .location button{
+        background-color: #181616!important;
+       color: gold !important;
+       border:0 !important;
+       font-size: 1.1rem !important;
+       width: 10.5rem !important;
+    }
+    
+    .optionslist
+    {  
+        color:green;
+        /* hsl(216, 50%, 16%); */
+       background-color: white;
+    }
+    
+    .loclogo
+    {   margin-top:2.7rem;
+        color:red;
+    }
+    
+    .loc
+    {
+        display: flex;
+    }
+
+    .laptopnavbar
+    {   visibility: hidden;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+
+    .mobilenavbar
+    {    background-color: #181616;
+        position:relative;  
+        position: -webkit-sticky;
+        position: sticky;
+        /* top: 0; */
+        left: 0;
+    }
+
+    .navcontent
+    {
+        display: inline;
+        font-size: 14px;
+    }
+
+    .mobilesubnavbar
+    {
+        display: flex;
+    }
+
+    .mobilenavcontent
+    {
+        margin-top: 1rem;
+    }
+
+    .mobilenavcontent a:link{
+         color: gold;
+         text-decoration: none;
+    };
+
+
+}
+
+

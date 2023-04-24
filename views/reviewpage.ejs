@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Reviews</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/reviewpage/review.css" />
+
+<body>
+
+    <section id="testimonials">
+        <div class="testimonial-heading">
+            <span>Reviews</span>
+            <div class="profile-img1">
+                <img src="<%=movieobj['imgurl']%>" />
+            </div>
+        </div>
+        <div class="addcomment">
+            <form method="post">
+                <div class="addcomment">
+                    <label for="comment">Add your Review</label>
+                    <span class="comment_box"> <input type="text" name="review" style="background-color: #221f1f;color: white;"></span>
+                </div>
+
+                <div class="addrating">
+                    <label for="rating">Add your Rating</label>
+                    <select id="rating" name="rating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button type="submit">Post</button>
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <div class="testimonial-box-container">
+            <div class="testimonial-box-container">
+
+                <% for(let i=0;i<reviewdata.length;i++){ %>
+                    <div class="testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="https://cdn.wallpapersafari.com/46/60/uYOX0V.jpg" />
+                                </div>
+                                <div class="name-user">
+                                    <strong>
+                                        <%=reviewdata[i]['criticname']%>
+                                    </strong>
+                                    <!-- <span><%=reviewdata[i]['mailid']%></span> -->
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <% for(let j=0;j<reviewdata[i]['rating'];j++){ %>
+                                    <i class="fas fa-star"></i>
+                                    <%}%>
+                                        <% for(let j=0;j<5-reviewdata[i]['rating'];j++){ %>
+                                            <i class="far fa-star"></i>
+                                            <%}%>
+
+                            </div>
+                        </div>
+
+                        <div class="client-comment">
+                            <p>
+                                <%=reviewdata[i]['reviewdesc']%>
+                            </p>
+                        </div>
+                    </div>
+                    <%}%>
+            </div>
+        </div>
+
+        <a href="/movies"><button class="backbtn">Back</button></a>
+    </section>
+
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

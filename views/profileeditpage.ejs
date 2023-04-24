@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/profile/profileeditpage.css">
+        <script src="https://kit.fontawesome.com/3e893105a3.js" crossorigin="anonymous"></script>
+
+        <!-- https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg -->
+
+        <title>Edit Profile</title>
+</head>
+
+<body>  
+        <div class="errormessage"><%=error%></div> 
+        <div class="container rounded mt-5 mb-5">
+                <div class="row">
+                        <div class="col-md-3 border-right div1">
+                                <div class="mt-5 text-center"><button class="btn btn-primary profile-button"
+                                                type="button" onclick="submitForms()">Save
+                                                Profile</button>
+                                        <button id="demo" style="display: none;" type="submit"
+                                                form="formcreated">demo</button>
+
+                                </div>
+                                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img
+                                                class="rounded-circle mt-5 profilepic" width="150px" height="170px"
+                                                src="/images/profile/image.jpg"><span class="font-weight-bold">EDIT YOUR
+                                                ACCOUNT</span>
+                                </div>
+                        </div>
+                        <div class="col-md-5 border-right div2">
+                                <div class="p-3 py-5">
+
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <h4 class="text-right">Profile Settings</h4>
+                                        </div>
+                                        <form id="form1" method="post" id="Profile_setting">
+                                                <div class="row mt-2">
+
+                                                        <div class="col-md-6"><label class="labels">First
+                                                                        Name</label><input type="text"
+                                                                        class="form-control" placeholder="First name"
+                                                                        value="rupesh" name="First_Name"></div>
+                                                        <div class="col-md-6"><label class="labels">Last
+                                                                        Name</label><input type="text"
+                                                                        class="form-control" placeholder="Surname"
+                                                                        value="chowdary" name="Last_Name"></div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                        <div class="col-md-12"><label class="labels">Mobile
+                                                                        Number</label><input name="Mobile_Number"
+                                                                        type="text" class="form-control"
+                                                                        placeholder="Enter phone number"
+                                                                        value="9012341234"></div>
+                                                        <div class="col-md-12"><label class="labels">Email
+                                                                        ID</label><input name="email" type="text"
+                                                                        class="form-control"
+                                                                        placeholder="Enter email id"></div>
+
+                                                </div>
+                                                <div class="row mt-3">
+                                                        <div class="col-md-6"><label class="labels">Gender</label>
+                                                                <select class="form-control" required name="gender"
+                                                                        >
+                                                                        <option disabled selected>Select gender</option>
+                                                                        <option value="Male" >Male</option>
+                                                                        <option value="Female">Female</option>
+                                                                        <option value="Others">Others</option>
+                                                                </select>
+                                                        </div>
+                                                        <div class="col-md-6"><label class="labels">Date of
+                                                                        Birth</label> <input class="form-control"
+                                                                        type="date" placeholder="Enter birth date"
+                                                                        name="DOB" value=""required>
+                                                        </div>
+                                                        <div class="col-md-6"><label class="labels">Login
+                                                                        Password</label><input name="Login_password"
+                                                                        type="text" class="form-control"
+                                                                        placeholder="XXXXXXXXX" value=""></div>
+                                                        <!-- <div class="col-md-6"><label class="labels">Profile
+                                                                        password</label><input id="Profile_password"
+                                                                        type="text" class="form-control"></div> -->
+                                                </div>
+
+                                                <div class="form-check form-switch askforeditcarddetails">
+                                                        <input class="form-check-input checkboxasking" type="checkbox"
+                                                                name="cbasking" value="">
+                                                        <label class="form-check-label"
+                                                                for="flexSwitchCheckDefault">Would You like to Edit your
+                                                                Card Details ?</label>
+                                                </div>
+                                        </form>
+                                </div>
+                        </div>
+
+                        <div class="col-md-4 editcarddetails div3" style="display: none">
+                                <div class="p-3 py-5">
+
+                                        <div class="d-flex justify-content-between align-items-center experience">
+                                                <span>
+                                                        <h4>Edit Card Details</h4>
+                                                </span><span class="border px-3 p-1 add-experience creditcardlogo"><i
+                                                                class="fa-solid fa-credit-card"></i></span>
+                                        </div><br>
+                                        <form id="card_login_form">
+                                                <div class="carddetailsmodificationlogin" style="display: none;">
+                                                        <div class="col-md-12"><label class="labels">User Reference
+                                                                        Number</label><input type="text"
+                                                                        class="form-control"
+                                                                        placeholder="SAHI143RUP2222"
+                                                                        id="card_check_userid">
+                                                        </div> <br>
+                                                        <div class="col-md-12"><label class="labels">Profile
+                                                                        Password</label><input type="password"
+                                                                        class="form-control passwordipbox"
+                                                                        placeholder="Password" 
+                                                                        id="card_check_Profilepassword"></div>
+                                                        <input type="checkbox" class="showpassword">Show Password
+
+                                                        <div class="mt-5 text-center"><button
+                                                                        class="btn btn-primary profile-button loginbtn"
+                                                                        type="button">Login</button></div>
+                                                </div>
+                                        </form>
+                                        <form id="form2" method="post">
+                                                <div class="carddetailsdiv" style="display: none;">
+                                                        <div class="col-md-12"><label class="labels">Card
+                                                                        HolderName</label><input type="text"
+                                                                        class="form-control" placeholder="e.g.Varun"
+                                                                        value="" name="Card_Name">
+                                                        </div> <br>
+                                                        <div class="col-md-12"><label class="labels">Card
+                                                                        Number</label><input type="text"
+                                                                        class="form-control"
+                                                                        placeholder="e.g.1234 5678 9548" value=""
+                                                                        name="Card_Number"></div>
+                                                        <div class="col-md-12"><label class="labels">CVV</label><input
+                                                                        type="text" class="form-control"
+                                                                        placeholder="XXX" name="CVV" value="123"></div>
+                                                        <div class="col-md-12"><label
+                                                                        class="labels">Expiry</label><input type="text"
+                                                                        class="form-control" placeholder="XX" value=""
+                                                                        name="Expiry">
+                                                        </div>
+                                                        <div class="col-md-12"><label class="labels">Profile
+                                                                        Password</label><input type="text"
+                                                                        class="form-control" placeholder="XXXXXXXXX"
+                                                                        value="" name="Profile_password"></div>
+                                                        <!-- <div class="mt-5 text-center"><button
+                                                                        class="btn btn-primary profile-button savebtn"
+                                                                        type="button">Save</button></div> -->
+                                                </div>
+                                        </form>
+
+
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <!-- </div>
+    </div> -->
+
+        <div id="div_only_for_form">
+
+                <form id="formcreated" method="post">
+
+                </form>
+
+        </div>
+
+        <script src="/js/profile/profileeditpage.js"></script>
+</body>
+
+</html>

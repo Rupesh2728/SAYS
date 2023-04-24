@@ -1,0 +1,613 @@
+@media screen and (min-width:1376px)
+{
+    .mainnavbar
+    {
+        width: 50rem;
+        height: 4rem;
+        margin-top:2rem;
+        margin-bottom: 1rem;
+        border-radius: 8rem;
+        display: flex;
+        justify-content: space-between;
+        border:2px solid goldenrod;
+    }
+
+    .laptopnavbar
+    {    background-color: black;
+        position: relative;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    .mobilenavbar
+    {   
+        visibility: hidden;
+        position:absolute;
+        z-index: -1;
+    }
+    
+    body{
+       background-color: black;
+    }
+    
+    .mainnavbar{
+        background: #181616;
+       }
+    
+    .mainlogo
+    {
+          width:8rem;
+          height: 8rem;
+          margin-top:0.5rem;
+          margin-left:0.5rem;
+          border-radius: 50%;
+          border:solid 4.5px lightblue;
+    }
+    
+    .sayslogo
+    {  
+         /* margin-left:0.75rem;
+        margin-top: 0.5rem;
+        width: 11rem;
+        height: 7rem; */
+    
+        margin-left:2rem;
+        margin-top: 0.5rem;
+        width: 16rem;
+        height: 8rem;
+    }
+
+    
+    
+    
+    .homelogo
+    {
+        color: gold;
+    }
+    
+    .profile
+    {
+        width:3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border:3.5px solid green;
+    }
+    
+    .navtext
+    {
+        color: gold;  
+    }
+    
+    .navbar-toggler-icon,.navbar-toggler
+    {
+        color: gold;
+    }
+    
+    .location
+    { 
+         margin-top:2rem;
+    }
+    
+    .location:hover{
+         cursor: pointer;
+    }
+    
+    .location button{
+        background-color: black !important;
+       color: gold !important;
+       border:0 !important;
+       font-size: 1.1rem !important;
+       width: 10.5rem !important;
+    }
+    
+    .optionslist
+    {  
+        color:green;
+        /* hsl(216, 50%, 16%); */
+       background-color: white;
+    }
+    
+    .loclogo
+    {   margin-top:2.7rem;
+        color:red;
+    }
+    
+    .loc
+    {
+        display: flex;
+    }
+
+    .colmn3
+    {
+        width: 5rem;
+    }
+
+}
+
+
+@media screen and (min-width:992px) and (max-width:1375px)
+{  
+    .mainnavbar
+    {
+        width: 30rem;
+        height: 4rem;
+        margin-top:2rem;
+        margin-bottom: 1rem;
+        border-radius: 8rem;
+        display: flex;
+        justify-content: space-between;
+        border:2px solid goldenrod;
+    }
+
+    .laptopnavbar
+    {   background-color: black;
+        position: relative;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    .mobilenavbar
+    {   visibility: hidden;
+        position:absolute;
+        z-index: -1;
+    }
+    
+   
+    
+    .mainnavbar{
+        background: #181616;
+       }
+    
+    /* .mainlogo
+    {
+          width:8rem;
+          height: 8rem;
+          margin-top:0.5rem;
+          margin-left:0.5rem;
+          border-radius: 50%;
+          border:solid 4.5px lightblue;
+    }
+     */
+    .sayslogo
+    {  
+         /* margin-left:0.75rem;
+        margin-top: 0.5rem;
+        width: 11rem;
+        height: 7rem; */
+    
+        margin-left:1rem;
+        margin-top: 0.5rem;
+        width: 12rem;
+        height: 6rem;
+    }
+
+    
+    
+    
+    .homelogo
+    {
+        color: gold;
+    }
+    
+    .profile
+    {
+        width:3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border:3.5px solid green;
+    }
+    
+    .navtext
+    {
+        color: gold;  
+    }
+    
+    .navbar-toggler-icon,.navbar-toggler
+    {
+        color: gold;
+    }
+    
+    .location
+    { 
+         margin-top:2rem;
+    }
+    
+    .location:hover{
+         cursor: pointer;
+         /* background-color: #161d2f;
+         border:solid 1px #161d2f; */
+    }
+    
+    .location button{
+        background-color: black !important;
+       color: gold !important;
+       border:0 !important;
+       font-size: 1.1rem !important;
+       width: 10.5rem !important;
+    }
+    
+    .optionslist
+    {  
+        color:green;
+        /* hsl(216, 50%, 16%); */
+       background-color: white;
+    }
+    
+    .loclogo
+    {   margin-top:2.7rem;
+        color:red;
+    }
+    
+    .loc
+    {
+        display: flex;
+    }
+
+
+    #footer,.aboutusdiv1,.aboutusdiv2,.aboutusdiv3,.aboutusdiv4,.aboutusdiv5
+    {
+        width:100%;
+    }
+
+    .aboutusdiv3
+    {
+        width:102%; 
+    }
+}
+
+
+@media screen and (min-width:769px) and (max-width:991px)
+{
+    .mainnavbar
+    {
+        width: 22rem;
+        height: 4rem;
+        margin-top:2rem;
+        margin-bottom: 1rem;
+        border-radius: 8rem;
+        display: flex;
+        justify-content: space-between;
+        border:2px solid goldenrod;
+    }
+
+    .laptopnavbar
+    {   background-color: black;
+        position: relative;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    .mobilenavbar
+    {   visibility: hidden;
+        position:absolute;
+        z-index: -1;
+    }
+    
+    /* body{
+        background-color: #161d2f;
+    }
+     */
+    .mainnavbar{
+        background-color: #181616;
+      }
+    
+    .sayslogo
+    {  
+        margin-left:0.25rem;
+        margin-top: 0.25rem;
+        width: 11rem;
+        height: 6rem;
+    }
+
+    .colmn1
+    {
+        width:10.7rem;
+    }
+
+    .colmn3
+    {
+         width:5rem;
+    }
+
+    .homelogo
+    {
+        color: gold;
+    }
+    
+    .profile
+    {   
+        width:3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border:3.5px solid green;
+    }
+   
+    .navtext
+    {
+        color: gold;  
+    }
+    
+    .navbar-toggler-icon,.navbar-toggler
+    {
+        color: gold;
+        padding-bottom: 2.1rem;
+    }
+    
+    .location
+    { 
+         margin-top:2rem;
+    }
+
+    
+    .location:hover{
+         cursor: pointer;
+         /* background-color: #161d2f;
+         border:solid 1px #161d2f; */
+    }
+    
+    .location button{
+        background-color: black !important;
+       color: gold !important;
+       border:0 !important;
+       font-size: 1rem !important;
+       width: 8.8rem !important;
+    }
+    
+    .optionslist
+    {  
+        color:green;
+        /* hsl(216, 50%, 16%); */
+       background-color: white;
+    }
+    
+    .loclogo
+    {   margin-top:2.7rem;
+        color:red;
+    }
+    
+    .loc
+    {
+        display: flex;
+    }    
+}
+
+
+
+@media screen and (min-width:425px) and (max-width:768px){
+
+    /* body{
+        background-color: #161d2f;
+    } */
+
+    .sayslogo
+    {
+        width:11rem;
+        height: 5.5rem;
+    }
+
+    .profile
+    {
+        width:3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border:3.5px solid green;
+    }
+
+    .location
+    { 
+         margin-top:2rem;
+    }
+  
+    .homelogo
+    {
+        color: gold;
+    }
+
+    .mobilenavbaritem
+    {   width:3.5rem;
+    }
+
+    .location
+    {   top:0;
+        margin-left:0.9rem;
+        margin-top: 0.4rem;
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .location button{
+        background-color: black !important;
+       color: gold !important;
+       border:0 !important;
+       font-size: 1.1rem !important;
+       width: 10.5rem !important;
+    }
+    
+    .optionslist
+    {  
+        color:green;
+        /* hsl(216, 50%, 16%); */
+       background-color: white;
+    }
+    
+    .loclogo
+    {   margin-top:2.7rem;
+        color:red;
+    }
+    
+    .loc
+    {
+        display: flex;
+    }
+
+    .laptopnavbar
+    {   visibility: hidden;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+
+    .mobilenavbar
+    {   background-color:black;
+        position:relative;  
+        position: -webkit-sticky;
+        position: sticky;
+        /* top: 0; */
+        left: 0;
+    }
+
+    /* .navcontent
+    {
+        mobilenavbaritemisplay: inline;
+    } */
+
+    .mobilesubnavbar
+    {
+        display: flex;
+    }
+
+    .mobilenavcontent
+    {
+        margin-top: 2rem;
+    }
+
+    .mobilenavcontent a:link{
+         color: gold;
+         text-decoration: none;
+    }
+
+    .aboutusdiv1
+    {
+        display: none;
+    }
+
+    .mobilesubnavbaraboutusdiv1 h1
+    {
+        color: gold !important;
+    }
+
+
+
+   
+
+  
+
+
+
+}
+
+
+@media screen and (min-width:51px) and (max-width:424px){
+
+    body{
+        background-color:black;
+    }
+
+    .sayslogo
+    {
+        width:8rem;
+        height: 4.5rem;
+    }
+
+    .profile
+    {
+        width:3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border:3.5px solid green;
+    }
+
+    .location
+    { 
+         margin-top:2.5rem;
+    }
+    
+
+    .homelogo
+    {
+        color: gold;
+        margin-bottom: 1rem;
+    }
+
+    .aboutusdiv1
+    {
+        display: none;
+    }
+
+    .location
+    {   top:0;
+        margin-left:0.9rem;
+        margin-top: 0.4rem;
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .location button{
+        background-color: black !important;
+       color: gold !important;
+       border:0 !important;
+       font-size: 1.1rem !important;
+       width: 10.5rem !important;
+    }
+    
+    .optionslist
+    {  
+        color:green;
+        /* hsl(216, 50%, 16%); */
+       background-color: white;
+    }
+    
+    .loclogo
+    {   margin-top:2.7rem;
+        color:red;
+    }
+    
+    .loc
+    {
+        display: flex;
+    }
+
+    .laptopnavbar
+    {   visibility: hidden;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+
+    .mobilenavbar
+    {    background-color: black;
+        position:relative;  
+        position: -webkit-sticky;
+        position: sticky;
+        /* top: 0; */
+        left: 0;
+    }
+
+    .navcontent
+    {
+        display: inline;
+        font-size: 14px;
+    }
+
+    .mobilesubnavbar
+    {
+        display: flex;
+    }
+
+    .mobilenavcontent
+    {
+        margin-top: 1rem;
+    }
+
+    .mobilenavcontent a:link{
+         color: gold;
+         text-decoration: none;
+    };
+
+
+}

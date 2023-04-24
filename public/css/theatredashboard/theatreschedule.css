@@ -1,0 +1,269 @@
+.heading
+{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: #221f1f;
+    width:70%;
+    margin: auto;
+    height: 4rem;
+    border-radius:7px;
+}
+
+.heading h4
+{
+   border: 3px solid red;
+   border-top:0;
+   border-left: 0;
+   border-right: 0;
+   margin: auto;
+   margin-left: 0.75rem;
+}
+
+.addedit
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.addedit button{
+   width:8rem;
+   height: 2.5rem;
+   margin: auto;
+   margin-right: 1rem;
+   font-size: 1.1rem;
+   border-radius: 10px;
+}
+
+.arrangementeditbtn,.showeditbtn
+{
+    width:7rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+.screens
+{
+    margin-top: 3rem;
+}
+
+.screentable
+{
+    color: white;
+    background-color: #221f1f;
+    width:70%;
+}
+
+.seatrow
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.showsdatatable
+{
+      color: white;
+    background-color: #221f1f;
+    width:90%;
+
+}
+
+table 
+{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+
+th,td 
+{
+  padding: 10px;
+  text-align: left;
+}
+
+th 
+{
+  color: red;
+}
+
+.headingrow
+{
+  border: 3px solid black;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+
+td 
+{
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.addscreenform
+{
+    background-color: antiquewhite;
+    border-radius: 6px;
+    width:80%;
+    margin: auto;
+}
+
+.addshowform
+{ background-color: antiquewhite;
+  border-radius: 6px;
+  width:90%;
+  margin: auto;
+}
+
+.addshowform input
+{
+   border-radius: 4px;
+    height: 2.2rem;
+    border:1px solid black;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.addscreenform input{
+    border-radius: 4px;
+    height: 2.2rem;
+    border:1px solid black;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.screenview
+{
+  position: -webkit-sticky;
+  position: sticky;
+   bottom: 0;
+}
+
+.alphabet
+{
+  border:2px solid black;
+  width:1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.seat{
+   background-color: lightpink;
+   width:1.4rem;
+   height:1.4rem;
+   border-radius: 5px;
+   border-bottom-left-radius: 0;
+   border-bottom-right-radius: 0;
+   border-top-right-radius: 50%;
+   border-top-left-radius: 50%;
+}
+
+.sold
+{
+  background-color: gray; 
+}
+
+.selected
+{
+  background-color: green;
+}
+
+.premium
+{
+  background-color: blue;
+}
+
+.empty{
+  background: transparent;
+}
+
+.disabled
+{
+  background-color: brown;
+}
+
+.seatheading
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top:2rem;
+}
+
+.radiobtn span{
+ margin-left:0.4rem
+}
+
+.schedulingheading
+{
+  display: flex;
+  justify-content: center;
+  margin-top:2rem;
+  letter-spacing: 6px;
+  color: white;
+}
+
+#selectscreen
+{
+  width:50%;
+  border-radius: 5px;
+  height: 2rem;
+  margin-left:1rem;
+}
+
+p
+{
+  margin-left:1rem;
+ margin-bottom: 0;
+}
+
+#selectmovie
+{
+   border-radius: 5px;
+   width:70%;
+   height: 2rem;
+   margin-left:1rem;
+}
+
+.st input{
+  width:30%;
+}
+
+.st select{
+  border-radius: 5px;
+}
+
+
+.price input{
+  width:50%;
+}
+
+.fdate input
+{
+   width:60%;
+}
+
+.tdate input
+{
+  width:40%;
+}
+
+#status
+{
+  width: 50%;
+  border-radius:5px;
+  margin-left:1rem;
+  height: 2rem;
+}
+
+.movieshowscheduling
+{
+  margin-top:3rem;
+}
+
+
+
+
+
+

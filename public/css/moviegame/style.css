@@ -1,0 +1,608 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.body
+{
+    background-size: cover;
+    background:no-repeat;
+}
+
+.leaderboardtitle
+{
+    font-size: 2rem;
+    letter-spacing:5px;
+    border: 4px solid red;
+    width:3.5rem;
+    height:3rem;
+    border-top:0;
+    border-left:0;
+    border-right: 0;
+    color:gold;
+     margin:auto;
+     position: absolute;
+     top:20%;
+     left:40%;
+     display: none;
+}
+
+.quit
+{
+     display: flex;
+     justify-content: center;
+     width:8rem;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    background-color: blue;
+    color: white;
+    border:0;
+    padding-top: 0.3rem;
+}
+
+.quit:hover{
+    background-color: indianred;
+    color: white;
+    cursor: pointer;
+}
+
+.leaderboard
+{
+     background: #221f1f;
+     color: white;
+     width:60%;
+     margin: auto;
+     position: absolute;
+     top:30%;
+     left:20%;
+     display: none;
+}
+
+.leaderboardtable
+{
+    background-color: #221f1f;
+    margin-top:1rem;
+    border-radius: 3px;
+}
+
+  table 
+  {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+ 
+  
+  th,td 
+  {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th 
+  {
+    color: red;
+  }
+
+  .headingrow
+  {
+    border: 3px solid black;
+  }
+  
+  td 
+  {
+    color: #ffc107;
+    font-weight: bold;
+  }
+
+.mainheading,.subheading
+{
+ display: flex;
+ justify-content: center;
+}
+
+.backbtn button
+{
+    width:8rem;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    position: absolute;
+    top:3%;
+    left:1%;
+    background-color: blue;
+    color: white;
+    border:0;
+}
+
+.backbtn button:hover{
+    background-color: indianred;
+    color: white;
+    cursor: pointer;
+}
+
+.about{
+    width:45%;
+    margin: auto;
+    margin-top:5rem;
+    display: block;
+}
+
+.about .desc{
+    letter-spacing:3px;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.about .desc2{
+    letter-spacing:3px;
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.about .desc3{
+    letter-spacing:3px;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+
+.about .title{
+    margin-left:17rem;
+    font-size: 2rem;
+    letter-spacing:5px;
+    border: 4px solid red;
+    width:3.5rem;
+    height:3rem;
+    border-top:0;
+    border-left:0;
+    border-right: 0;
+    color:gold;
+}
+
+
+
+::selection{
+    color: #fff;
+    background: #007bff;
+}
+
+.startbtn
+{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.quiz_box,
+.result_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.instructions
+{
+    position: absolute;
+    top:30%;
+    left: 50%;
+
+}
+
+
+
+.instructions.activeinstructions,
+.quiz_box.activeQuiz,
+.result_box.activeResult{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+}
+
+.startbtn button{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: indianred;
+    cursor: pointer;
+}
+
+.startbtn button:hover{
+    background: green;
+    color: white;
+}
+
+.instructions{
+    width: 50rem;
+    opacity: 0;
+    transform: scaleZ(1.2);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background: transparent;
+    color: white;
+    top:8%;
+    left:35%;
+}
+
+.instructions .instructionstitle{
+    height: 3rem;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top:4rem;
+    color:gold;
+}
+
+.instructions .instructionstitle h2{
+    border: 4px solid red;
+    border-top:0;
+    border-right: 0;
+    padding-left: 0.25rem;
+    height: 3rem;
+    width:45%;
+    margin-left: 2rem;
+}
+
+
+.instructions .instructionslist .info
+{
+    margin-top:1rem;
+}
+
+.instructions .instructionslist .rewardinfo
+{
+    margin-top:2rem;
+}
+
+
+.instructions .instructionslist{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.instructions .instructionslist .info span{
+    font-weight: 600;
+    color: red;
+}
+.instructions .buttons{
+    height: 60px;
+    margin-left:5rem;
+}
+
+.instructions .buttons button{
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    transition: all 0.3s ease;
+    margin-left:2rem;
+}
+
+.quiz_box
+{
+    width: 550px;
+    background: transparent;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.quiz_box header{
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding: 0 30px;
+    background: transparent;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+    color: white;
+}
+
+
+
+.timerbox .timer{
+    color: white;
+    background: transparent;
+    padding: 0 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    border-radius: 50%;
+    width:6rem;
+    height: 6rem;
+    margin-left:2.5rem;
+    margin-top: 0.5rem;
+    border:3px solid red;
+}
+
+
+.timerbox .time_left_txt{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: white;
+    margin-left:2rem;
+    border: 4px solid red;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    height: 2.3rem;
+}
+
+.timerbox .timer .timer_sec{
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #343a40;
+    user-select: none;
+    border-radius: 50%;
+    border: 2px solid green;
+    width:5rem;
+    height: 5rem;
+    font-size: 3rem;
+}
+
+.timerbox{
+  visibility: hidden;
+}
+
+
+
+
+.timerbox .timer .time_line{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: #007bff;
+}
+
+section{
+    padding: 25px 30px 20px 30px;
+    background: transparent;
+}
+
+section .question{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+  
+}
+
+section .option_list{
+    padding: 20px 0px;
+    display: block;   
+}
+
+section .option_list .option{
+    background: transparent;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+}
+
+section .option_list .option:last-child{
+    margin-bottom: 0px;
+}
+
+section .option_list .option:hover{
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+}
+
+.correct
+{
+    color: #155724;
+    background: green;
+    border: 1px solid #c3e6cb;
+}
+
+section .option_list .option.incorrect{
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+section .option_list .option.disabled{
+    pointer-events: none;
+}
+
+section .option_list .option .icon{
+    height: 26px;
+    width: 26px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    line-height: 24px;
+}
+.option_list .option .icon.tick{
+    color: #23903c;
+    border-color: #23903c;
+    background: #d4edda;
+}
+
+.option_list .option .icon.cross{
+    color: #a42834;
+    background: #f8d7da;
+    border-color: #a42834;
+}
+
+footer{
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+}
+
+footer .total_que span{
+    display: flex;
+    user-select: none;
+    color: wheat;
+}
+
+footer .total_que span p{
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+footer .total_que span p:first-child{
+    padding-left: 0px;
+}
+
+fooer .next_btn
+{
+    background: green;
+    color: white;
+}
+
+footer button{
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    background: #007bff;
+    border: 1px solid #007bff;
+    line-height: 10px;
+    display: none;
+    pointer-events: none;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+footer button:hover{
+    background: #0263ca;
+}
+
+.show{
+    display: block;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.result_box{
+    background: #221f1f;
+    border-radius: 5px;
+    display: flex;
+    padding: 25px 30px;
+    width: 450px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.result_box .icon{
+    font-size: 100px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.result_box .complete_text{
+    font-size: 20px;
+    font-weight: 500;
+    color:white;
+}
+
+.result_box .score_text span{
+    display: flex;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color:goldenrod;
+}
+
+.result_box .score_text span p{
+    padding: 0 4px;
+    font-weight: 600;
+}
+
+.result_box .buttons{
+    display: flex;
+    margin: 20px 0;
+}
+
+.result_box .buttons button{
+    margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+.result_box .buttons button:hover{
+    color: white;
+    background-color: green;
+}
+
+.buttons button.continuebtn{
+    color: #fff;
+    background: green;
+}
+
+.buttons button.continuebtn:hover{
+    background: white;
+    color: green;
+}
+
+.buttons button.quitbtn{
+    color: red;
+    background: #fff;
+}
+
+.buttons button.quitbtn:hover{
+    color: #fff;
+    background: indianred;
+}

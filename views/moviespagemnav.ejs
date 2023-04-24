@@ -1,0 +1,89 @@
+<div class="mobilenavbar">
+  <div class="mobilesubnavbar">
+    <a href="/home" class="d-block p-3 link-dark text-decoration-none" title="Icon-only" data-bs-toggle="tooltip"
+      data-bs-placement="right">
+      <img src="/images/FinalSAYSlogo.png" alt="SAYS" class="sayslogo">
+    </a>
+
+    <ul class="mobilenavcontent">
+
+      <div class="row justify-content-center align-items-center g-2">
+        <div class="col">
+          <li class="navcontent" style="margin-right: 0.5rem;"><a href="/movies"><span>Movies</span></a></li>
+        </div>
+
+        <div class="col">
+          <li class="navcontent" style="margin-right: 0.5rem;"><a href="/snacks"><span>Snacks</span></a></li>
+        </div>
+
+        <div class="col">
+          <li class="navcontent" style="margin-right: 0.5rem;"><a href="/movienews"><span>News</span></a></li>
+        </div>
+
+        <div class="col">
+          <li class="navcontent" style="margin-right: 0.5rem;"><a href="/aboutus"><span>About</span></a></li>
+        </div>
+
+        <div class="col">
+          <li class="navcontent" style="margin-right: 0.5rem;"><a href="/contactus"><span>ContactUS</span></a></li>
+        </div>
+
+      </div>
+    </ul>
+  </div>
+
+  <div class="d-flex flex-shrink-0 mobilenavbar" style="display: flex;">
+    <div class="mobilesubnavbar2" style="width:13%;">
+      <ul class="nav nav-pills nav-flush flex-column mb-auto text-center" style="width:3.5rem">
+        <li class="mobilenavbaritem locfind" style="width:3.5rem">
+          <i class="fa-solid fa-location-dot fa-lg" style="color: red;"></i>
+          <div class="col colmn3 loc">
+            <div class="location">
+              <select data-live-search="true" class="selectpicker">
+                <option class="optionslist">Vijayawada</option>
+                <option class="optionslist">Vishakapatnam</option>
+                <option class="optionslist">Guntur</option>
+                <option class="optionslist">Nellore</option>
+                <option class="optionslist">Sullurpeta</option>
+                <option class="optionslist">Tada</option>
+                <option class="optionslist">Rajmundry</option>
+                <option class="optionslist">Srikakulam</option>
+              </select>
+            </div>
+          </div>
+        </li>
+
+        <li class="mobilenavbaritem" style="width:3.5rem">
+          <i data-provide="datepicker" class="fa-sharp fa-solid fa-calendar-days"
+            style='color: gold;padding-top: 1rem;'></i>
+          <script type="text/javascript">
+            $(document).ready(function () {
+              $('#datepicker').datepicker();
+            });
+          </script>
+        </li>
+
+        <li class="mobilenavbaritem" style="width:3.5rem;margin-top: 2rem;">
+          <a href="/home"><i class="fa-solid fa-house-chimney homelogo"></i></a>
+        </li>
+
+        <li class="mobilenavbaritem" style="width:3.5rem">
+          <div class="dropdown" style="margin-left:0.75rem">
+            <a href="#"
+              class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle"
+              id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="/images/moviespage/image.jpg" alt="mdo" width="24" height="24" class="rounded-circle profile">
+            </a>
+            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
+              <li><a class="dropdown-item" href="/profile/laptopprofilepage">Profile</a></li>
+              <li><a class="dropdown-item" href="/recentbooking">Recent Booking</a></li>
+              <li><a class="dropdown-item" href="/profile/profileeditpage">Change Passwords</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/signout">Sign out</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>

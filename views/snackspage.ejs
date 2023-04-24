@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+  <title>Food Website</title>
+
+  <%- include('snackspageheaderlinks') %>
+
+</head>
+
+
+
+<body>
+
+
+  <%- include('snacksmnav') %>
+
+    <div class="mobilesubnavbaraboutusdiv1" style="width:90%;">
+      <div class="container py-5">
+        <div class="row h-100 align-items-center py-3">
+          <div class="col">
+            <h2 class="display-2 font-weight-normal text-center py-3 " style="color: gold;font-size: 1.5rem;">Have Fun
+              With Food While Watching...</h2>
+            <p class="lead  text-white mb-2 px-3" style="font-size: 1rem;color: white;">
+              Welcome To Our SAYS Snacks.SAYS helps you to get your snack at your seat So donot Waste your time and
+              order your Snacks Now !!!
+            </p>
+          </div>
+
+          <div class="col-lg-6 d-none d-lg-block"><img src="https://bootstrapious.com/i/snippets/sn-about/illus.png"
+              alt="" class="img-fluid"></div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    </div>
+
+
+    <%- include('snackslnav') %>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">
+                <p id="cart-title">Cart Items</p>
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h3>Ticket Id :<span>SAYS1002</span></h3>
+              <div id="cart-page" class="cart-toggle">
+                <table>
+                  <thead>
+                    <tr>
+                      <td>Item</td>
+                      <td>Name</td>
+                      <td>Quantity</td>
+                      <td>Price</td>
+                    </tr>
+                  </thead>
+
+                  <tbody id="table-body">
+
+                  </tbody>
+                </table>
+              </div>
+
+              <hr>
+              <div id="cart">
+                <div id="checkout" class="cart-toggle">
+                  <div class="numtotalitem">
+                    <p id="total-item">Total Item :</p>
+                    <p id="totalitemnum">0</p>
+                  </div>
+
+                  <div class="numtotalprice">
+                    <p id="total-price">Total Price :</p>
+                    <p id="totalpricenum">--</p>
+                  </div>
+
+                  <!-- <p id="m-total-amount">Total Amout : 100</p> -->
+                  <div class="proceed">
+                    <button class="cart-btn">Proceed To Payment</button>
+                  </div>
+                  <!-- <button class="cart-btn">Proceed To Payment</button> -->
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="containerclass" id="container">
+        <div id="food-container">
+          <div id="header">
+            <div class="add-box">
+              <form method="post" id="ticketidform">
+                <label for="cars">Ticket Id :</label>
+                <select name="Ticketid" id="ticketid" class="ticketid" onclick="submitForms()">
+                  <%for(let i=ticketarr.length-1;i>=0;i--){%>
+                    <option value="<%=ticketarr[i]['TicketId']%>" onclick="submitForms()" class="dropdownForTickets">
+                      <%=ticketarr[i]['TicketId']%>
+                    </option>
+                    <%}%>
+                </select>
+              </form>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="util" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="numitems">0 Items</span>
+            </button>
+
+          </div>
+
+
+          <div id="food-items" class="d-food-items">
+
+            <div id="biryani" class="d-biryani">
+              <p id="category-name">Popcorn</p>
+              <% for(let i=0;i<fooditem.length;i++){ %>
+                <% if(fooditem[i]['category']=='popcorn' ){ %>
+                  <div class="item-card">
+                    <img src="<%=fooditem[i]['imgurl']%>">
+                    <div class="foodinfo">
+                      <p id="item-name">
+                        <%=fooditem[i]['SnackName']%>
+                      </p>
+                      <p id="item-price"><i class="fa-solid fa-indian-rupee-sign"></i><span>
+                          <%=fooditem[i]['price']%>
+                        </span></p>
+                    </div>
+                    <div class="card-top">
+                      <i class="fa-solid fa-star">
+                        <span>
+                          <%=fooditem[i]['rating']%>
+                        </span></i>
+                      <i class="fa-solid fa-plus add-to-cart"></i>
+                    </div>
+                  </div>
+                  <% } %>
+                    <% } %>
+
+
+
+            </div>
+
+            <div id="chicken" class="d-chicken">
+              <p id="category-name">Chicken Delicious</p>
+
+
+              <% for(let i=0;i<fooditem.length;i++){ %>
+                <% if(fooditem[i]['category']=='Cool Drinks' || fooditem[i]['category']=='Water Bottle' ){ %>
+                  <div class="item-card">
+                    <img src="<%=fooditem[i]['imgurl']%>">
+                    <div class="foodinfo">
+                      <p id="item-name">
+                        <%=fooditem[i]['SnackName']%>
+                      </p>
+                      <p id="item-price"><i class="fa-solid fa-indian-rupee-sign"></i><span>
+                          <%=fooditem[i]['price']%>
+                        </span></p>
+                    </div>
+                    <div class="card-top">
+                      <i class="fa-solid fa-star">
+                        <span>
+                          <%=fooditem[i]['rating']%>
+                        </span></i>
+                      <i class="fa-solid fa-plus add-to-cart"></i>
+                    </div>
+                  </div>
+                  <% } %>
+                    <% } %>
+
+
+                      <div id="paneer" class="d-paneer">
+                        <p id="category-name">Pizza's and Burger's</p>
+
+                        <% for(let i=0;i<fooditem.length;i++){ %>
+                          <% if(fooditem[i]['category']=='pizza' || fooditem[i]['category']=='Burger' ){ %>
+                            <div class="item-card">
+                              <img src="<%=fooditem[i]['imgurl']%>">
+                              <div class="foodinfo">
+                                <p id="item-name">
+                                  <%=fooditem[i]['SnackName']%>
+                                </p>
+                                <p id="item-price"><i class="fa-solid fa-indian-rupee-sign"></i><span>
+                                    <%=fooditem[i]['price']%>
+                                  </span></p>
+                              </div>
+                              <div class="card-top">
+                                <i class="fa-solid fa-star">
+                                  <span>
+                                    <%=fooditem[i]['rating']%>
+                                  </span></i>
+                                <i class="fa-solid fa-plus add-to-cart"></i>
+                              </div>
+                            </div>
+                            <% } %>
+                              <% } %>
+
+
+
+                      </div>
+
+                      <div id="vegetable" class="d-vegetable">
+                        <p id="category-name">Samosa and Puff's</p>
+
+                        <% for(let i=0;i<fooditem.length;i++){ %>
+                          <% if(fooditem[i]['category']=='Samosa' || fooditem[i]['category']=='puff' ){ %>
+                            <div class="item-card">
+                              <img src="<%=fooditem[i]['imgurl']%>">
+                              <div class="foodinfo">
+                                <p id="item-name">
+                                  <%=fooditem[i]['SnackName']%>
+                                </p>
+                                <p id="item-price"><i class="fa-solid fa-indian-rupee-sign"></i><span>
+                                    <%=fooditem[i]['price']%>
+                                  </span></p>
+                              </div>
+                              <div class="card-top">
+                                <i class="fa-solid fa-star">
+                                  <span>
+                                    <%=fooditem[i]['rating']%>
+                                  </span></i>
+                                <i class="fa-solid fa-plus add-to-cart"></i>
+                              </div>
+                            </div>
+                            <% } %>
+                              <% } %>
+
+                      </div>
+
+                      <div id="south-indian" class="d-south-indian">
+                        <p id="category-name">Chicken Recipe's</p>
+                        <% for(let i=0;i<fooditem.length;i++){ %>
+                          <% if(fooditem[i]['category']=='Chicken Reciepe' ){ %>
+                            <div class="item-card">
+                              <img src="<%=fooditem[i]['imgurl']%>">
+                              <div class="foodinfo">
+                                <p id="item-name">
+                                  <%=fooditem[i]['SnackName']%>
+                                </p>
+                                <p id="item-price"><i class="fa-solid fa-indian-rupee-sign"></i><span>
+                                    <%=fooditem[i]['price']%>
+                                  </span></p>
+                              </div>
+                              <div class="card-top">
+                                <i class="fa-solid fa-star">
+                                  <span>
+                                    <%=fooditem[i]['rating']%>
+                                  </span></i>
+                                <i class="fa-solid fa-plus add-to-cart"></i>
+                              </div>
+                            </div>
+                            <% } %>
+                              <% } %>
+                      </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;">
+        <p id="hidden_ejs_TicketNumber">
+          <%=TicketId%>
+        </p>
+      </div>
+
+
+      <div id="myDiv" data-my-array="<%= JSON.stringify(fooditem) %>" style="display: none;" ></div>
+
+
+
+
+        <!-- ======= Footer ======= -->
+        <%- include('footer') %>
+          <!-- End Footer -->
+
+          <%- include('snackspagescriptlinks') %>
+
+</body>
+
+</html>

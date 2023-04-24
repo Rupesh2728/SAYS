@@ -1,0 +1,89 @@
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+  }
+
+ 
+
+  .aboutusdiv1,.aboutusdiv2,.aboutusdiv3,.aboutusdiv4,.aboutusdiv5
+  {
+    background-color: black;
+  }
+
+   .aboutusdiv2 h2{
+     color: gold !important;
+   }
+
+   .aboutusdiv2 p{
+    color: white !important;
+  }
+
+  .aboutusdiv3
+  {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .social-link:hover,
+  .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+  }
+
+  .insta:hover,.insta:focus{
+      color: #E75480 ;
+  }
+
+  .twitter:hover,.twitter:focus{
+    color: blue;
+ }
+
+ .fb:hover,.fb:focus{
+  color: lightblue;
+}
+
+.lin:hover,.lin:focus{
+  color: blue;
+}
+
+  .col-md-4, .col-xl-2, .colsm-6{
+    border-radius: 20%;
+    background-color: rgb(235, 232, 227);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva',' Verdana',' sans-serif';
+  }
+  .col-xl-2:hover,
+  .col-md-4:hover ,
+  .col-sm-6 :hover {
+    transform: scale(1.1);
+  }
+
+nav  a strong {
+  font-family: 'Bebas Neue', 'cursive';
+  color: gold;
+}
+.col h1{
+  font-family: 'Playfair Display', serif;
+}
+  
+.col p{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.container h2{
+  font-family: 'Gentium Book Plus', serif;
+}
+
+
+.firstdivafternavbar
+{
+    display: flex;
+}
+
+

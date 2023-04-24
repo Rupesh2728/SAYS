@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/theatredashboard/theatreprofileeditpage.css">
+    <script src="https://kit.fontawesome.com/3e893105a3.js" crossorigin="anonymous"></script>
+
+
+
+    <title>Edit Profile</title>
+</head>
+
+<body background="https://c1.wallpaperflare.com/preview/330/534/353/seat-chair-theatre-dark.jpg">
+    <div class="errormessage"><%=error%></div> 
+    <div class="container rounded mt-5 mb-5">
+        <div class="row">
+
+            <div class="col-md-3 border-right div1">
+                <div class="mt-5 text-center"><button class="btn btn-primary profile-button"
+                    type="button" onclick="submitForms()">Save Profile</button>
+                            <button id="demo" style="display: none;" type="submit"
+                            form="formcreated">demo</button>
+                        </div>
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                    <div class="profile-img">
+                        <img class="profilepic"
+                            src="https://cdn.siasat.com/wp-content/uploads/2022/08/jr-ntr-health.jpg"
+                            alt="PROFILE PIC" />
+                        <div class="file btn btn-sm btn-primary" style="width:12rem;border-radius: 5px;">
+                            Change Photo
+                            <input type="file" name="file" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 border-right div2">
+                <div class="p-3 py-5">
+
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="div2heading">Profile Settings</h4>
+                    </div>
+                    <form id="form1" method="post" id="Profile_setting">
+                        <div class="row mt-2">
+                            <div class="col">
+                                <label class="labels">Theatre Name</label><input type="text" class="form-control"
+                                    placeholder="First name" value="" name="Theatre_Name">
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col">
+                                <div class="col-md-12"><label class="labels">Theatre Email ID</label><input type="text"
+                                        class="form-control" placeholder="Enter email id" value=""
+                                        name="Theatre_EmailID">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-3">
+                            <div class="col-md-6"><label class="labels">Contact Number</label><input type="text"
+                                    class="form-control" placeholder="Enter Contact Number" value="7"
+                                    name="Contact_Number1"></div>
+                            <div class="col-md-6"><label class="labels">Additional Contact Number</label><input
+                                    type="text" class="form-control" placeholder="Enter Contact Number"
+                                    value="9123456754" name="Contact_Number2"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6"><label class="labels">Street(With Doorno.)</label><input type="text"
+                                    class="form-control" value="FSDFSDG" placeholder="Street" name="Street"></div>
+                            <div class="col-md-6"><label class="labels">City</label><input type="text"
+                                    class="form-control" placeholder="City" value="Sricity" name="City" readonly></div>
+                            <div class="col-md-6"><label class="labels">State</label><input type="text"
+                                    class="form-control" value="Andhra Pradesh" placeholder="State" name="State"></div>
+                            <div class="col-md-6"><label class="labels">Pincode</label><input type="text"
+                                    class="form-control" placeholder="Pincode" value="517646" name="pincode"></div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col">
+                                <label class="labels">License Number</label>
+                                <input type="text" class="form-control" placeholder="License Number" value=""
+                                    name="License_Number">
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col"><label class="labels">Login Password</label><input type="text"
+                                    class="form-control" placeholder="XXXXXXXXX" value="" name="Login_Password"></div>
+                        </div>
+
+
+                        <div class="form-check form-switch askforaddplaces">
+                            <input class="form-check-input checkboxasking" type="checkbox" name="cbasking" value="">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Would You like to Edit NearBy
+                                Places ?</label>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 editlocation div3" style="display: none">
+
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center experience">
+                        <span>
+                            <h4 class="div3heading">Add NearBy Places</h4>
+                        </span>
+                        <span class="border px-3 p-1 add-experience loclogo">
+                            <i class="fas fa-location fa-xl" style="color: red;"></i>
+                        </span>
+                    </div>
+
+                    <br>
+                    <form id="form2">
+                        <div class="addlocations" style="display: none;">
+                            <div class="col-md-12">
+                                <label class="labels">Location Name</label>
+                                <input type="text" class="form-control" placeholder="e.g.Navya Tea Center"
+                                    value="Bandar Bus Stand" style="width:90%" name="nearbyplace1">
+                                <div class="addlocpic" style="display: flex;justify-content: space-between;">
+                                    <label>Add Photo :-</label>
+                                    <input type="file">
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="col-md-12">
+                                <label class="labels">Location Name</label>
+                                <input type="text" class="form-control" placeholder="e.g.Navya Tea Center"
+                                    value="Bandar Bus Stand" style="width:90%" name="nearbyplace2">
+                                <div class="addlocpic" style="display: flex;justify-content: space-between;">
+                                    <label>Add Photo :-</label>
+                                    <input type="file">
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="col-md-12">
+                                <label class="labels">Location Name</label>
+                                <input type="text" class="form-control" placeholder="e.g.Navya Tea Center"
+                                    value="Bandar Bus Stand" style="width:90%" name="nearbyplace3">
+                                <div class="addlocpic" style="display: flex;justify-content: space-between;">
+                                    <label>Add Photo :-</label>
+                                    <input type="file">
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="col-md-12">
+                                <label class="labels">Location Name</label>
+                                <input type="text" class="form-control" placeholder="e.g.Navya Tea Center"
+                                    value="Bandar Bus Stand" style="width:90%" name="nearbyplace4">
+                                <div class="addlocpic" style="display: flex;justify-content: space-between;">
+                                    <label>Add Photo :-</label>
+                                    <input type="file">
+                                </div>
+                            </div>
+                            <br>
+
+                        
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="div_only_for_form">
+
+        <form id="formcreated" method="post">
+
+        </form>
+
+</div>
+    <script src="/js/theatredashboard/theatreprofileeditpage.js"></script>
+</body>
+
+</html>

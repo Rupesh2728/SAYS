@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+    <link rel="stylesheet" href="/css/Signup/Signup.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Responsive Regisration Form </title>
+</head>
+
+<body>
+
+    <div class="background">
+
+    </div>
+    
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="/Signup" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>First Name</label>
+                            <input type="text" placeholder="Enter your name" name="First_Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Enter your name" name="Last_Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" name="DOB" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" placeholder="abcd1234@gmail.com" name="email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="text" placeholder="Enter mobile number" name="Mobile_Number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required name="gender" >
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Login password</label>
+                            <input type="password" placeholder="e.g. Adff4$y78" name="Login_password" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Profile password</label>
+                            <input type="password" placeholder="e.g. Ee'ee@1235" name="Profile_password" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Card HolderName</label>
+                            <input type="text" placeholder="Enter your card Holder name" name="Card_Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Card Number</label>
+                            <input type="text" placeholder="Enter card number" name="Card_Number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>CVV</label>
+                            <input type="password" placeholder="Enter your cvv" name="CVV" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Expiry</label>
+                            <input type="text" placeholder="Enter Last 2 digits of your expiry" name="Expiry" required>
+                        </div>
+                    </div>
+
+
+                    <div class="endingdiv">
+                        <button class="sbmtBtn">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                        <span class="title">
+                            <%=show_error%>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+        <script src="/js/Signup/Signup.js"></script>
+</body>
+
+</html>

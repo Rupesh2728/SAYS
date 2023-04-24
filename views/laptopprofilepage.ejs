@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/profile/laptopprofilepage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3e893105a3.js"crossorigin="anonymous"></script>
+
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container emp-profile">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="profile-img">
+                        <img class="profilepic" src="/images/profile/image.jpg" alt="PROFILE PIC"/>
+                        <div class="file btn btn-sm btn-primary" style="width:12rem;border-radius: 5px;">
+                            Change Photo
+                            <input type="file" name="file"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="profile-head">
+                                <h5 id="Firstname+LastName">
+                                    Rupesh Chowdary
+                                </h5>
+                
+                                <p class="proile-rating " >User Reference Number : <span id="UserReferenceNumber">SAHI143RUP2222</span></p>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Card Details</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <a  href="/profile/profileeditpage"><button class="profile-edit-btn" type="button">Edit Profile</button></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="profile-work">
+                        <p>For Queries</p>
+                        <a href="" class="contactuslink"><i class="fa-solid fa-messages"></i> ContactUS</a><br/>
+                        <p>For Info</p>
+                        <a href="" class="aboutuslink"><i class="fa-regular fa-address-card"></i> AboutUS</a><br/>
+                        <p>Can FollowUs on</p>
+                        <a href="" class="twitterlink"><i class="fa-brands fa-twitter"></i> Twitter</a><br/>
+                        <a href="" class="instalink"><i class="fa-brands fa-instagram"></i> Instagram</a><br/>
+                        <a href="" class="youtubelink"><i class="fa-brands fa-youtube"></i> Youtube</a><br/>
+                        <a href="" class="fblink"><i class="fa-brands fa-facebook"></i> Facebook</a><br/>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="tab-content profile-tab" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label >First Name</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p id="Firstname">rupesh</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Last Name</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p id="Lastname">Chowdary</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Email</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p id="emailID">Rupesh@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Phone</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p id="MobileNumber">91+ 7803256563</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Gender</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p id="gender">Male</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Date of birth</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p id="DOB">17-10-2003</p>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Card Holder Name</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p id="cardname"> RUPESH</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Card Number</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p id="cardnum">12341234XXXXXXXX</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>CVV</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p id="cvv">XXX</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Expiry</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p id="Expiry">XX</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Email</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p id="emailID2">rupesh@gmail.com</p>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>           
+    </div>
+
+    
+    <div class="back_home">
+        <a href="/home"> <button>Back to home</button>
+        </a>
+    </div>
+
+    <script src="/js/profile/laptopprofilepage.js"></script>
+</body>
+
+</html>

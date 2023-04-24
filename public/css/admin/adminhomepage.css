@@ -1,0 +1,317 @@
+.movie-card
+{
+    width: 200px;
+    height: 290px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all step-end;
+    z-index: 1;
+    /* border: 2px red solid; */
+    background-color: #221f1f;
+}
+
+#movie-name,#movie-price
+{
+    color: white;
+}
+
+
+.fa-star span
+{
+    color: white;
+}
+
+.fa-star 
+{
+  color: gold;
+}
+
+
+.movie-card img{
+    width:100%;
+    height: 10rem;
+}
+
+.card-bottom
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top:2rem;
+}
+
+.card-bottom span{
+    margin-left:0.25rem;
+}
+
+
+#movie-name{
+    margin: 5px 0;
+    font-weight: 600;
+    color: white;
+    font-size: 18px;
+}
+
+
+.movieinfo
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#title
+{
+    border:solid 4px red;
+    color: white;
+    width:24rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+    font-weight: 600;
+    border-top: 0;
+    border-right: 0;
+    font-size: 1.7rem;
+}
+
+.rentbtn
+{
+    background-color: red;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    width:4rem;
+    height: 2rem;
+}
+
+.websitereviews
+{ margin-top: 2rem;
+   width:100%; 
+}
+
+.websitereviews h4
+{
+    color: white;
+    border:4px solid red;
+    width:14rem;
+    padding-left:0.5rem;
+    padding-bottom: 0.5rem;
+    border-top:0;
+    border-right:0;
+}
+
+.reviewtable
+{
+    background-color: #221f1f;
+    margin-top:1rem;
+    border-radius: 3px;
+}
+
+  table 
+  {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+ 
+  
+  th,td 
+  {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th 
+  {
+    color: red;
+  }
+
+  /* tr:hover
+  {
+     transform: scale(1.2);
+     transition: all;
+  } */
+
+  .headingrow
+  {
+    border: 3px solid black;
+  }
+  
+  td 
+  {
+    color: #ffc107;
+    font-weight: bold;
+  }
+
+  .salesreport h2
+  {   color: white;
+      letter-spacing: 0.130em;
+       display: flex;
+       justify-content: center;
+       margin-top: 3rem;  
+  }
+
+  .weeklysales
+  {
+      width:75%;
+      background-color: #221f1f;
+      height:22rem;
+      border-radius: 10px;
+
+  }
+
+  .weeklysales h4
+  {
+      letter-spacing: 0.75rem;
+      display: flex;
+      justify-content: center;
+      margin-top:1rem;
+  }
+
+
+
+.reviewbox{
+    width:27rem;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #221f1f;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+    border:0;
+    border-radius: 6px;
+}
+
+.profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+   color: white;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: white;
+    font-size: 0.8rem;
+}
+.rating{
+    color: #f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.client-comment p{
+    font-size: 0.9rem;
+   color: white;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:504px){
+    
+.movie-card
+{
+    width: 43vw;
+    height: 260px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all step-end;
+    position: relative;
+    z-index: 1;
+    /* border: 2px red solid; */
+    background-color: #221f1f;
+}
+
+
+#movie-name
+{
+    color: white;
+}
+
+
+.fa-star span
+{
+    color: white;
+    font-size: 4vw;
+}
+
+.fa-star 
+{
+  color: gold;
+}
+
+.fa-plus
+{
+    color:red;
+    background-color: white;
+    border-radius: 50%;
+    padding:2px;
+    
+}
+
+
+
+.movie-card img{
+    width:90%;
+    height: 8rem;
+    margin-left: 0.5rem;
+}
+
+.card-bottom
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top:1rem;
+}
+
+.card-bottom span{
+    margin-left:0.25rem;
+}
+
+
+#movie-name{
+    margin: 5px 0;
+    font-weight: 600;
+    color: white;
+    font-size: 4.5vw;
+}
+
+
+.movieinfo
+{
+    display: block;
+    justify-content: space-between;
+}
+
+
+}

@@ -1,0 +1,142 @@
+body{
+    background-color:  black;
+       /* background-image:url("/background.jpg"); */
+        /* background-color: black;       */
+   }
+   
+   
+   .errormessage{
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+   }
+   
+   .form-control:focus {
+       box-shadow: none;
+       border:#daa530
+   }
+   
+   .profile-button {
+       background: rgba(11, 10, 11, 0.938);
+       box-shadow: none;
+       border: goldenrod
+   }
+   
+   .profile-button:hover {
+       background:#BA68C8
+   }
+   
+   .profile-button:focus {
+       background: #682773;
+       box-shadow: none
+   }
+   
+   .profile-button:active {
+       background: #682773;
+       box-shadow: none
+   }
+   
+   .back:hover {
+       color: #682773;
+       cursor: pointer
+   }
+   
+   .labels {
+       font-size: 11px
+   }
+   
+   .add-experience:hover {
+       background: #BA68C8;
+       color: #fff;
+       cursor: pointer;
+       border: solid 1px #BA68C8
+   }
+   
+   .carddetailsmodificationlogin
+   {   position :absolute;
+       display: none;
+       z-index:1;
+       /* background-color:#daa520 ; */
+       
+   }
+   
+   .carddetailsdiv
+   {   position:relative;
+       display: none;
+       z-index: -1;
+   }
+   
+   .showpassword
+   {
+      margin-top:1rem;
+   }
+   
+   .div1,.div2
+   {
+       /* background-color: rgba(128, 128, 128, 0.589); */
+       background-color: #daa530;
+       border:solid 3px gold;
+       border-radius: 1rem;
+   }
+   
+   .div2{
+       margin-left: 1rem;
+   }
+   
+   .div1
+   {
+       /* background-image: linear-gradient(blue,pink,blue,pink); */
+   }
+   
+   .div3
+   {  
+       margin-left: 1rem;
+       background-color:#daa520 
+   ;
+       border:solid 3px gold;
+   
+       border-radius: 1rem;
+       height: 7rem;
+       width:25rem;
+   }
+   
+   .profilepic
+   {
+       border:solid 3px gold;
+   }
+   
+   .askforeditcarddetails
+   {    
+       margin-top: 1rem;
+   
+   }
+   
+   .checkboxasking:hover
+   {
+       cursor: pointer;
+       background-color: #daa520;
+   }
+   
+   body:hover{
+       cursor: pointer;
+       /* background-color: #daa520; */
+   }
+   
+   
+   
+   @media screen and (max-width:767px) 
+   {
+       .div2{
+          
+           margin-left: 0rem;
+           margin-top:1rem;
+       }
+   
+       .div3
+       {
+           margin-left: 0rem;
+           margin-top:1rem;
+           width: 40rem;
+       }
+   }
+   

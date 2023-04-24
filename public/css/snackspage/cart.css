@@ -1,0 +1,164 @@
+.cart-toggle{
+    display: block;
+}
+
+#cart-page{
+    background: white;
+    /* margin: 40px 10px; */
+    position: relative;
+}
+#cart-title{
+    font-size: 35px;
+    margin: 0;
+    color: gold;
+}
+
+.btn-close
+{
+    background-color:gold;
+}
+#cart-page table{
+    width: 100%;
+    margin-top: 18px;
+    text-align: center;
+}
+#cart-page thead tr td{
+    font-size: 23px;
+
+}
+.modal-header
+{
+    background-color: #221f1f;
+}
+
+#cart-page thead 
+{
+    width:100%;
+}
+
+.cart-btn{
+    outline: none;
+    border: none;
+    background: crimson;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    bottom: 30px;
+    margin: 15px 0;
+    cursor: pointer;
+    
+}
+#cart-page table tbody td{
+    padding: 10px 0;
+    font-size: 20px;
+}
+#cart-page table tbody button{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background: none;
+    background: lightcoral;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+#cart-page table tbody img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border : 2px solid #221f1f;
+}
+#checkout{
+    /* margin: 40px auto; */
+    border-radius: 5px;
+    background: white;
+    /* padding: 10px 20px; */
+}
+
+#totalitemnum,#totalpricenum
+{
+    font-size : 22px;
+}
+
+
+#cart
+{
+    margin-top:3rem;
+}
+
+#total-price,#total-item{
+    font-size: 25px;
+    color: indianred;
+}
+
+.numtotalitem,.numtotalprice
+{
+    display: flex;
+    justify-content: space-between;
+}
+#delievery{
+    font-size: 20px;
+    color: limegreen;
+}
+#cart{
+    background: whitesmoke;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width:504px){
+    #cart-page table tbody td{
+        padding: 10px 0;
+        font-size: 4vw;
+    }
+
+    #cart-page table tbody img{
+        width: 12vw;
+        height: 9vh;
+        border-radius: 50%;
+    }
+
+    #cart-page thead tr td{
+        font-size: 5vw;   
+    }
+   
+    .modal-body h3
+    {
+       font-size: 5vw;
+    }
+
+    .cart-btn{
+        border: none;
+        background: crimson;
+        color: white;
+        padding: 2vw 3vw;
+        border-radius: 18px;
+        font-size: 4.5vw;
+        text-transform: uppercase;
+        bottom: 30px;
+        margin: 15px 0;
+        cursor: pointer;
+    }
+
+    #total-price,#total-item{
+        font-size: 6vw;
+        color: indianred;
+    }
+
+    #cart-title{
+        font-size: 6.5vw;
+        margin: 0;
+        color: indianred;
+    }
+
+    #totalitemnum,#totalpricenum
+  {
+    font-size : 5vw;
+    padding-top: 0.25rem;
+  }
+
+
+
+}

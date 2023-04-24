@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%- include('moviespageheaderlinks') %>
+
+        <title>MoviesPage</title>
+</head>
+
+<body>
+    <div class="checkFilter" style="display: none;">
+        <p id="checklocation">
+            <%=checklocaton%>
+        </p>
+        <p id="checkLangfileter">
+            <%=checkLangfileter%>
+        </p>
+        <p id="checkGenrefilter">
+            <%=checkGenrefilter%>
+        </p>
+    </div>
+
+    <%- include('moviespagemnav') %>
+
+        <div class="mobilesubnavbaraboutusdiv1" style="width:90%;">
+            <div class="container py-5">
+                <div class="row h-100 align-items-center py-3">
+                    <div class="col">
+                        <h2 class="display-2 font-weight-normal text-center py-3 "
+                            style="color: gold;font-size: 1.5rem;">Experience the fun of Watching...</h2>
+                        <p class="lead  text-white mb-2 px-3" style="font-size: 1rem;color: white;">
+                            Welcome To Our SAYS Movies.Select your movie, Book your tickets Now !!!
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 d-none d-lg-block"><img
+                            src="https://bootstrapious.com/i/snippets/sn-about/illus.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+        <%- include('moviespagelnav') %>
+
+
+            <div class="section searchbardiv">
+                <div class="container" style="padding-top: 0px;">
+                    <div class="search-input" style="margin-top: 2rem;">
+                        <!-- <a href="" target="_blank" hidden></a> -->
+                        <input type="text" placeholder="Search Your Movies Here...">
+                        <div class="autocom-box" style="position: absolute;">
+                            <!-- here list are inserted from javascript -->
+                        </div>
+                        <div class="icon"><i class="fa fa-search" style="color: red;margin-top: 1.4rem;"
+                                aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section filterssection">
+                <div class="container">
+
+                    <div class="filterlang">
+                        <form id="form1">
+                            <label>Language :</label>
+                            <select class="Language" id="Language" name="Lang" onclick="submitForms()">
+                                <option value="All" onclick="submitForms()">All</option>
+                                <option value="Telugu" onclick="submitForms()">Telugu</option>
+                                <option value="Tamil" onclick="submitForms()">Tamil</option>
+                                <option value="Hindi" onclick="submitForms()">Hindi</option>
+                            </select>
+                        </form>
+                    </div>
+
+                    <div class="filtergenre">
+                        <form id="form2">
+                            <label>Film Genre :</label>
+                            <select class="Genre" id="Genre" name="Genre" onclick="submitForms()">
+                                <option value="All" onclick="submitForms()">All</option>
+                                <option value="Thriller" onclick="submitForms()">Thriller</option>
+                                <option value="Horror" onclick="submitForms()">Horror</option>
+                                <option value="Comedy" onclick="submitForms()">Comedy</option>
+                            </select>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- LATEST MOVIES SECTION -->
+            <div class="section">
+                <div class="container">
+                    <div class="section-header">
+                        latest movies
+                    </div>
+                    <div class="movies-slide carousel-nav-center owl-carousel">
+
+                        <% for(let i=0;i<latestmovies.length;i++){ %>
+                            <a href="/movies/individualmovie?name=<%=latestmovies[i]['MovieName'] %>&city=<%=checklocaton%>"
+                                class="movie-item">
+                                <img src="<%=latestmovies[i]['imgurl']%>" alt="">
+
+                                <div class="movie-item-content">
+                                    <div class="movie-item-title">
+                                        <%=latestmovies[i]['MovieName'] %>
+                                    </div>
+
+                                    <div class="movie-infos">
+                                        <div class="movie-info">
+                                            <i class="bx bxs-star"></i>
+                                            <span>
+                                                <!-- <%=latestmovies[i]['rating'] %> -->
+                                            </span>
+                                        </div>
+                                        <div class="movie-info">
+                                            <i class="bx bxs-time"></i>
+                                            <span>
+                                                <%=latestmovies[i]['duration'] %> mins
+                                            </span>
+                                        </div>
+                                        <div class="movie-info">
+                                            <span>HD</span>
+                                        </div>
+                                        <div class="movie-info">
+                                            <!-- <span>+<%=latestmovies[i]['age_limit'] %></span> -->
+                                        </div>
+
+                                    </div>
+
+                                    <div class="movie-info bookbtn">
+                                        <button type="button" class="btn bookbtn">Book</button>
+                                    </div>
+
+                                </div>
+                            </a>
+                            <% } %>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="section">
+                <div class="container">
+                    <div class="section-header">
+                        Upcoming movies
+                    </div>
+                    <div class="movies-slide carousel-nav-center owl-carousel">
+
+
+                        <% for(let i=0;i<upcomingmovies.length;i++){ %>
+                            <a href="/movies/individualmovie?name=<%=upcomingmovies[i]['MovieName'] %>" class="movie-item">
+                                <img src="<%=upcomingmovies[i]['imgurl']%>" alt="">
+                                <div class="movie-item-content">
+                                    <div class="movie-item-title">
+                                        <%=upcomingmovies[i]['MovieName'] %>
+                                    </div>
+                                    <div class="movie-infos">
+                                        <div class="movie-info">
+                                            <i class="bx bxs-heart"></i>
+                                            <span>
+                                                <!-- <%=upcomingmovies[i]['liked'] %>k -->
+                                            </span>
+                                        </div>
+                                        <div class="movie-info">
+                                            <i class="bx bxs-time"></i>
+                                            <span>
+                                                <%=upcomingmovies[i]['duration'] %> mins
+                                            </span>
+                                        </div>
+                                        <div class="movie-info">
+                                            <span>HD</span>
+                                        </div>
+                                        <div class="movie-info">
+                                            <span>
+                                                <!-- <%=upcomingmovies[i]['age_limit'] %>+ -->
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="movie-info bookbtn">
+                                        <button type="button" class="btn bookbtn">Book</button>
+                                    </div>
+                                </div>
+                            </a>
+                            <% } %>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="section">
+                <div class="container">
+                    <div class="section-header">
+                        Review Hub
+                    </div>
+                    <div class="hero-section">
+
+                        <div class="topsection">
+                            <div class="owl-carousel carousel-nav-center" id="rh-carousel">
+                                <% for(let i=0;i<reviewdata.length;i++){ %>
+                                    <a href="/reviews?name=<%=reviewdata[i]['MovieName']%>">
+                                        <div class="hero-slide-item">
+                                            <img src="<%=reviewdata[i]['imgurl']%>" alt="">
+                                            <div class="hero-slide-item-content">
+                                                <div class="item-content-wraper">
+                                                    <div class="item-content-title top-down">
+                                                        <%=reviewdata[i]['MovieName']%>
+                                                    </div>
+                                                    <div class="movie-infos top-down delay-2">
+                                                        <div class="movie-info">
+                                                            <i class="bx bxs-star"></i>
+                                                            <span>
+                                                                <%=reviewdata[i]['rating']%>
+                                                            </span>
+                                                        </div>
+                                                        <div class="movie-info">
+                                                            <i class="bx bxs-time"></i>
+                                                            <span>
+                                                                <%=reviewdata[i]['duration']%> mins
+                                                            </span>
+                                                        </div>
+                                                        <div class="movie-info">
+                                                            <span>HD</span>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="item-content-description top-down delay-4">
+                                                        <%=reviewdata[i]['reviewdesc']%>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <% } %>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <%- include('footer') %>
+
+
+                <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+                    <!-- <i class="bi bi-arrow-up-short"></i> -->
+                </a>
+                <div id="div_only_for_form">
+
+                    <form id="formcreated" method="post">
+
+                    </form>
+
+                    <form id="form3" style="display: none;">
+
+                        <input type="text" name="location" value="Vijayawada">
+
+                    </form>
+
+                </div>
+
+                <form action="/movies/searchbar" method="post" style="display: none;" id="moviesearchform">
+                    <input type="text" name="moviename" value="">
+                    <input type="text" name="City" value="">
+                </form>
+
+                <%- include('moviespagescriptlinks') %>
+
+
+
+
+
+
+</body>
+
+</html>

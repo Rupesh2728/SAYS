@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/css/timings/timings.css">
+</head>
+
+<body>
+   
+  <div id="timevalue" style="display: none;">
+    <p><%=timevalue%></p>
+  </div>
+
+  <div class="blurpart" style="background: url('/images/timings/timingsbgimage.jpg') no-repeat;">
+
+  </div>
+   
+
+
+  <div class="container">
+    <div class="box1">
+      <img src="<%=movieobj['imgurl']%>" alt="">
+    </div>
+
+    <div class="box2">
+
+      <div class="filters">
+
+        <div class="time_filter">
+          <label for="time">Select Time</label>
+          <form method="post" id="time_filter" >
+            <select name="time" id="time" name="time" onclick="submitForms()">
+              <option value="Show All" onclick="submitForms()">Show All</option>
+              <option value="6:00 AM" onclick="submitForms()">6:00 AM</option>
+              <option value="9:00 AM" onclick="submitForms()">9:00 AM</option>
+              <option value="2:00 PM" onclick="submitForms()">2:00 PM</option>
+              <option value="6:00 PM" onclick="submitForms()">6:00 PM</option>
+              <option value="9:00 PM" onclick="submitForms()">9:00 PM</option>
+            </select>
+          </form>
+        </div>
+
+
+      </div>
+
+
+      <div class="theatre">
+        <% for(let i=0;i<showdetailsarray.length;i++){ %>
+          <div class="sub_theatre">
+            <h2>
+              <%=showdetailsarray[i]['tName']%> <span><a class="about_theatre" href="/usertheatreprofile?treff=<%=showdetailsarray[i]['tReff']%>"><i class='bx bx-info-circle'></i></a></span>
+            </h2>
+            <% for(let j=0;j<showdetailsarray[i]['timingsarray'].length;j++){ %>
+              <span><a href="/movies/seatarrangement?name=<%=movieobj['MovieName']%>&time=<%=showdetailsarray[i]['timingsarray'][j]%>&tReff=<%=showdetailsarray[i]['tReff']%>"><button>
+                    <%=showdetailsarray[i]['timingsarray'][j]%>
+                  </button></a></span>
+              <%}%>
+          </div>
+          <%}%>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/timings/timings.js"></script>
+</body>
+
+</html>

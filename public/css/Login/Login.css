@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* color: #e4e4e4; */
+    box-sizing: border-box;
+    font-family: 'popppins', sans-serif;
+}
+
+body {
+    background: #020410;
+    max-height: 100vh;
+}
+
+.background {
+
+    width: 100%;
+    height: 100vh;
+    background: url('/images/Login/copy_imgae.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+}
+
+.container {
+
+    transform: translateY(-110%);
+    width: 75%;
+    height: 550px;
+    background: url('/images/Login/copy_imgae.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    /* margin-top: 5px; */
+    margin-left: 160px;
+    overflow: hidden;
+
+
+
+
+}
+
+.container .content {
+    position: absolute;
+    width: 58%;
+    height: 100%;
+    background: transparent;
+    padding: 70px;
+    color: #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.content .logo {
+    font-size: 30px;
+
+}
+
+.text-sci h2 {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.text-sci h2 span {
+    font-size: 25px;
+}
+
+.text-sci p {
+
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.social-icon a i {
+    font-size: 22px;
+    color: #e4e4e4;
+    margin-right: 10px;
+    transition: .5s ease;
+}
+
+.social-icon a:hover i {
+    transform: scale(1.2);
+}
+
+.social-icon a:hover .fb {
+    color: #3b5998;
+}
+
+.social-icon a:hover .insta {
+    color: #d62976;
+}
+
+.social-icon a:hover .twit {
+    color: #1DA1F2;
+}
+
+.social-icon a:hover .yt {
+    color: red;
+}
+
+.container .logreg-box {
+    /* z-index: 12; */
+    visibility:visible;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 432px;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.container .logreg-box2 {
+    /* display: none; */
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 432px;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.content h2 {
+    transition: .5s ease;
+}
+
+.content h2:hover {
+
+    transform: scale(1.1);
+}
+
+.logreg-box,
+.logreg-box2 .form-box {
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #e4e4e4;
+
+}
+
+.form-box h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.form-box .input-box {
+    position: relative;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #e4e4e4;
+    margin: 30px 0;
+}
+
+.input-box input {
+
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #e4e4e4;
+    font-weight: 500;
+    padding-right: 28px;
+
+
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    top: -5px;
+}
+
+
+
+.input-box .icon {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+}
+
+.form-box .remember-forgot {
+    font-size: 14.5px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+
+    accent-color: #e4e4e4;
+    margin-right: 3px;
+
+}
+
+.remember-forgot a {
+    color: #e4e4e4;
+    text-decoration: none;
+
+}
+
+.remember-forgot a:hover {
+
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #c4103d;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #e4e4e4;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-box .login-registor {
+    font-size: 14.5px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+.login-registor p a {
+    color: #e4e4e4;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-registor p a:hover {
+    text-decoration: underline;
+}
+
+.login_sucess {
+    margin-top: 10px;
+    color: red;
+    font-size: 20px;
+}

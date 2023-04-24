@@ -1,0 +1,169 @@
+*{
+    font-family: 'popppins', sans-serif;
+}
+body{
+   background: black;
+   max-width: 100%;
+   min-height: 100vh;
+   cursor: pointer;
+}
+.about_theatre{
+    size: inherit;
+    color:inherit;
+}
+.container{
+    position: relative;
+   display: flex;
+   flex-direction: row;
+   
+   max-width: 100%;
+   min-height: 100vh;
+
+}
+.container .box1{
+    border:none;
+    /* border-radius: 20px; */
+    width: 27%;
+    overflow: hidden;
+   transition: .5s ease;
+}
+.container .box1 img{
+    width: 100%;
+    height:100%;
+   
+}
+.container .box1:hover{
+    transform: scale(1.1);
+}
+.blurpart{
+   position: absolute;
+    width: 100%;
+    height: 100vh;
+    /* background: url('copy_imgae.jpg') no-repeat; */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    
+   
+}
+.container .box2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 73%;
+  
+}
+.container .box2 .filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    margin-left: 35px;
+}
+
+.container .box2 .filters .time_filter{
+margin-right: 38px;
+cursor: pointer;
+}
+
+.container .box2 .filters .time_filter select{
+  background-color: #221f1f; 
+  border:0;
+  color: white;
+  cursor: pointer;
+}
+
+.container .box2 .filters .time_filter label:hover{
+    color: white;
+    cursor: pointer;
+  }
+    
+.container .box2 .filters select{
+    border-radius: 9px;
+    padding: 10px;
+}
+.container .box2 .filters label{
+    color:brown;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.container .box2 .filters label:hover{
+    color: white;
+    cursor: pointer;
+}
+.box2 .theatre{
+    margin-top: 38px;
+    margin-left: 35px;
+}
+.box2 .theatre .sub_theatre{
+    width: 50%;
+    padding-bottom: 10px;
+}
+.box2 .theatre h2{
+
+color: rgb(255, 77, 0);
+/* font-size: 30px; */
+
+
+}
+.box2 .theatre h2 span{
+    margin-left: 10px;
+    font-size:large;
+    color: rgb(0, 213, 255);
+}
+.box2 .theatre button{
+    margin: 5px;
+    transition: .5s ease;
+    padding: 15px;
+    border-radius: 6px;
+}
+.box2 .theatre button:hover{
+    transform: scale(1.2);
+    background-color: rgb(32, 128, 0);
+    color: white;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .container .box1{
+        width: 45%
+    }
+    
+    .box2 .theatre button{
+        padding: 10px;
+    }
+    
+    .box2 .theatre h2{
+
+        
+       font-size: 22px;
+        
+        }
+  }
+  @media screen  and (max-width: 425px){
+
+
+
+  .container{
+   flex-direction: column; 
+  }
+   
+  .container .box1{
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+  }
+    
+  }
+
+  .sub_theatre:nth-child(2){
+    
+     border-top: 1px solid gray;
+     border-bottom: 1px solid gray;
+  }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/seatarrangement/seatarrangement.css" />
+    <title>
+        <%=movieobj['movieTitle']%> Movie seat Booking
+    </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&family=Roboto+Slab:wght@500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body background="https://c1.wallpaperflare.com/preview/330/534/353/seat-chair-theatre-dark.jpg" style="background-position: center;
+background-repeat: no-repeat;
+background-size: cover;">
+
+
+
+<div class="back_to_home">
+    <a href="/movies"  style="position:relative; z-index:10;"> <button>Back to Movies</button>
+    </a>
+</div>
+
+    <div class="main_body">
+
+        <div class="side_image">
+            <img src="<%=movieobj['imgurl']%>" alt="">
+        </div>
+
+        <div class="container">
+
+            <ul class="display">
+                <li>
+                    <div class="seats"></div>
+                    <small>Available</small>
+                </li>
+                <li>
+                    <div class="seats showcaseselected"></div>
+                    <small>Selected </small>
+                </li>
+                <li>
+                    <div class="seats SoldOut"></div>
+                    <small>Sold Out </small>
+               </li>
+
+               <li>
+                <div class="seats premium"></div>
+                <small>Premium</small>
+              </li>
+              <li>
+                <div class="seats"></div>
+                <small>Normal</small>
+              </li>
+             <li>
+                <div class="seats disabled"><i class="fa-solid fa-wheelchair fa-lg"></i></div>
+                <small>Disabled</small>
+            </li>
+        </ul>   
+            
+            
+            <div class="movie_title">
+                <h1 id="movie" value="250">
+                    <%=movieobj['MovieName']%>
+                </h1>
+               
+            </div>
+
+           
+            <div class="seats_arrangement">
+                <% for( let i=0;i<userbookingseatarr.length;i++) {%>
+                    <div class="row">
+                        <% for(let j=0;j<userbookingseatarr[i].length;j++) { %>
+                       <%if(userbookingseatarr[i][j]==3){%>
+                        <div class="seats premium" style="color:white;"></div>
+                       <%} else if(userbookingseatarr[i][j]==2){%> 
+                        <div class="seats" style="color: black;"></div>
+                        <% } else if(userbookingseatarr[i][j]==1){ %>
+                            <div class="seats disabled" style="color:white;"><i class="fa-solid fa-wheelchair fa-lg"></i></div>
+                        <%} else if(userbookingseatarr[i][j]==0){ %>
+                            <div class="seats emptyspace"></div>
+                        <%} else if(userbookingseatarr[i][j]==4){ %>
+                            <div class="seats SoldOut"></div>
+                    <% }} %>
+                    </div>
+                    <% } %> 
+            </div>
+
+             <div class="alleyesthisway">
+                <p style="display: flex;justify-content: center;">------All Eyes This Way------</p>
+             </div>
+            
+       
+            <div class="proceed">
+                <div id="preceed_button">
+                     <div>
+                    <button id="Proceed_btn">Proceed</button>
+                    </div>
+
+                    <p class="text" id="text">
+                        You have selected <span id="count">0</span> seat(s) for a price of RS.<span id="total">0</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+         <div class="info" style="display: none;">
+          <p class="mname"><%=infoobj["mname"]%></p>
+          <p class="treff"><%=infoobj["tReff"]%></p>
+          <p class="stime"><%=infoobj["showtime"]%></p>
+          <p class="pprice"><%=infoobj["premiumprice"]%></p>
+          <p class="nprice"><%=infoobj["normalprice"]%></p>
+          <p class="sname"><%=infoobj["screenname"]%></p>
+         </div>
+
+    </div>
+    
+    <script src="/js/seatarrangement/seatarrangement.js"></script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title> CONTACT US </title>
+  <link rel="stylesheet" href="/css/contactus/contactus.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+
+  <div class="overall">
+
+    <div class="back_home">
+      <a href="/home"> <button>Back to home</button>
+      </a>
+      <span class="error_display">
+        <%=show_error_contactus%>
+      </span>
+    </div>
+
+
+    <div class="container">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">IIITS COLLEGE</div>
+            <div class="text-two">SRI CITY, 517646</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">+9188 8691 9160</div>
+            <div class="text-two">+9185 5594 9262</div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">says@gmail.com</div>
+            <div class="text-two">admin.says@gmail.com</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Send us a message</div>
+          <p></p>
+
+
+          <form method="post" action="/contactus">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name" name="uname" required>
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email" name="email" required>
+            </div>
+            <div class="input-box message-box">
+              <textarea placeholder="Enter your message(enter more than 20 words)" name="message"></textarea>
+            </div>
+            <div class="button">
+              <button type="submit" class="submitbutton"><input type="button" value="Send Now"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

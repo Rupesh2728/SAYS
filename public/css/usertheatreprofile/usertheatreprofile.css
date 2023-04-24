@@ -1,0 +1,145 @@
+*{
+    font-family: 'Roboto Slab', serif;    
+     color: rgb(243, 239, 239);
+     
+    
+}
+body{
+   background-size: cover;
+}
+.Reviewbutton{
+    padding: 4px;
+    margin-top: 5px;
+    background-color: #0d6efd;
+    color: #fff;
+    border-radius: 4px;
+    
+    transition: .5s ease;
+}
+.Reviewbutton:hover{
+    background-color: red;
+    color: #fff;
+    transform: scale(1.07);
+}
+.reviewlink{
+    position: relative;
+    color:inherit;
+    margin-top: 5px;
+    margin-left: 7px;
+    text-decoration: none;
+    z-index: 100;
+}
+p{
+    font-family: 'PT Serif', serif;
+}
+div{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+    padding: auto;
+}
+h1{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.container1 {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;   
+}
+.container2{
+    margin:auto;
+    text-align: center;    
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.container3{
+    display: block;
+    margin-top:3rem;
+}
+
+.container4 h2{
+    width: fit-content;
+    text-align: center; 
+}
+
+h2{
+    margin: auto;
+}
+
+.aboutheading
+{
+    border: 4px solid red;
+    border-top:0;
+    border-right: 0;
+    border-left: 0;
+    color: gold;
+}
+
+.nearbyplacesheading
+{
+    border: 4px solid red;
+    border-top:0;
+    border-right: 0;
+    border-left: 0;
+    color: gold;
+    width:15rem;
+}
+
+
+.image{
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img{
+    height: 100px;
+    width: 100px;
+    
+    border: 2px solid rgb(95, 145, 176);
+}
+.col{
+    align-items: center;
+    justify-content: center;
+}
+
+
+.carousel-image{
+
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.carousel-image img{
+    width:40rem;
+    height: 30rem;
+}
+
+#carouselExampleSlidesOnly{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+.bgimage{
+    background-position: center;
+    background-size: cover;
+}
+
+.main
+{
+    position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}

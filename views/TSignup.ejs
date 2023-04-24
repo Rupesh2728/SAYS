@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="/css/Signup/Signup.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Responsive TRegisration Form </title>
+</head>
+
+<body>
+
+    <div class="background">
+
+    </div>
+
+    <div class="container">
+        <header>Theatre|Registration</header>
+
+        <form action="/TSignup" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Theatre Name</label>
+                            <input type="text" placeholder="Enter your name" name="Theatre_Name" required>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" placeholder="abcd1234@gmail.com" name="email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Contact Number</label>
+                            <input type="text" placeholder="Enter mobile number" name="Mobile_Number1" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Additional Contact Number</label>
+                            <input type="text" placeholder="Enter Additional mobile number" name="Mobile_Number2"
+                                required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Street(With Doorno.)</label>
+                            <input type="text" placeholder="Enter Street" name="Street" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>City</label>
+                            <input type="text" placeholder="Enter city" name="City" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State</label>
+                            <input type="text" placeholder="Enter State" name="State" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Pincode</label>
+                            <input type="text" placeholder="Enter pin code" name="Pincode" required>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>License Number</label>
+                            <input type="text" placeholder="Should be of Length 6" name="License_Number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Login password</label>
+                            <input type="password" placeholder="e.g. Adff4$y78" name="Login_password" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label> nearbyplace1</label>
+                            <input type="text" placeholder="Landmark1" name="nearbyplace1" required>
+                        </div>
+
+                        <div class=" input-field">
+                            <label> nearbyplace2</label>
+                            <input type="text" placeholder="Landmark2" name="nearbyplace2" required>
+                        </div>
+                        <div class="input-field">
+                            <label> nearbyplace3</label>
+                            <input type="text" placeholder="Landmark3" name="nearbyplace3" required>
+                        </div>
+                        <div class="input-field">
+                            <label> nearbyplace4</label>
+                            <input type="text" placeholder="Landmark4" name="nearbyplace4" required>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="endingdiv">
+                        <button class="sbmtBtn">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                        <span class="title">
+                            <%=show_error%>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+        <script src="/js/Signup/Signup.js"></script>
+</body>
+
+</html>

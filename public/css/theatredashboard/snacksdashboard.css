@@ -1,0 +1,129 @@
+.heading
+{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: #221f1f;
+    width:70%;
+    margin: auto;
+    height: 4rem;
+    border-radius:7px;
+}
+
+.heading h4
+{
+   border: 3px solid red;
+   border-top:0;
+   border-left: 0;
+   border-right: 0;
+   margin: auto;
+   margin-left: 0.75rem;
+}
+
+.add
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.add button{
+   width:8rem;
+   height: 2.5rem;
+   margin: auto;
+   margin-right: 1rem;
+   font-size: 1.1rem;
+   border-radius: 10px;
+}
+
+.editbtn
+{
+    width:7rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+.snacksdata
+{
+    margin-top: 3rem;
+}
+
+.snacktable
+{
+    color: white;
+    background-color: #221f1f;
+    width:70%;
+}
+
+table 
+{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+
+th,td 
+{
+  padding: 10px;
+  text-align: left;
+}
+
+th 
+{
+  color: red;
+}
+
+.headingrow
+{
+  border: 3px solid black;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+
+td 
+{
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.addsnackform
+{
+    background-color: antiquewhite;
+    border-radius: 6px;
+    width:80%;
+    margin: auto;
+}
+
+.addsnackform input{
+    border-radius: 4px;
+    height: 2.2rem;
+    border:1px solid black;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.snackpic
+{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+tbody td input
+{
+  border :none;
+  background-color: #221f1f;
+  color:gold;
+}
+
+tbody td input:focus, tbody td textarea:focus, tbody td select:focus
+{
+  outline: none;
+}
+
+.snacknum
+{
+  width:70%;
+}

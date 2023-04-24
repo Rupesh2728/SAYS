@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+.background {
+    position: absolute;
+   
+    width: 100vw;
+    height: 100vh;
+   background: url('https://c1.wallpaperflare.com/preview/330/534/353/seat-chair-theatre-dark.jpg') no-repeat;
+
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+}
+
+.container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background: url('https://c1.wallpaperflare.com/preview/330/534/353/seat-chair-theatre-dark.jpg') no-repeat;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.container header{
+    border:3px solid #4070f4;
+    width:2rem;
+    height:2.3rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    overflow: hidden;
+}
+
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: red;
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .fields .input-field{
+    display: flex;
+    width: 15rem;
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+}
+.input-field input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+
+.input-field select,
+.input-field input[type="date"]{
+    color: #707070;
+}
+
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+
+.container form button{
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    cursor: pointer;
+}
+
+.container form .btnText{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form button:hover{
+    background-color: #265df2;
+}
+
+form button i
+{
+    margin: 0 6px;
+}
+
+form .buttons{
+    display: flex;
+    align-items: center;
+}
+
+form .buttons button{
+    margin-right: 14px;
+}
+
+.endingdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 750px) {
+    .container form{
+        overflow-y: scroll;
+    }
+    .container form::-webkit-scrollbar{
+       display: none;
+    }
+    form .fields .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+
+    .background{
+        height:20rem;
+    }
+}
+
+@media (max-width: 550px) {
+    form .fields .input-field{
+        width: 100%;
+    }
+}

@@ -1,0 +1,72 @@
+.heading
+{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: #221f1f;
+    width:70%;
+    margin: auto;
+    height: 4rem;
+    border-radius:7px;
+    display: flex;
+    justify-content: center;
+}
+
+.heading h4
+{
+  margin-top: 0.8rem;
+   letter-spacing: 0.6rem;
+   font-size: 2rem;
+}
+
+.usertable
+{
+    margin-top: 3rem;
+}
+
+.clienttable
+{
+    color: white;
+    background-color: #221f1f;
+    width:70%;
+}
+
+table 
+{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+
+th,td 
+{
+  padding: 10px;
+  text-align: left;
+}
+
+th 
+{
+  color: red;
+}
+
+.headingrow
+{
+  border: 3px solid black;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+
+td 
+{
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.profilepic
+{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}

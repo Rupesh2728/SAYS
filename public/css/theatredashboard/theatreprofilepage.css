@@ -1,0 +1,192 @@
+.topdiv .profileimg
+{
+     width:80%;
+    border-radius: 50%;
+     height:80%;
+     margin-left: 1.5rem;
+     border:2px solid indianred;
+}
+
+
+
+.image{
+    border:2px solid red;
+    border-left:0;
+    border-bottom:0;
+    border-top:0;
+
+}
+
+.backtohomebtn
+{
+   width:8rem;
+   height:3rem;
+   font-size: 1.1rem; 
+   color: white;
+   background-color: blue;
+   border-radius: 8px;
+   border: 0;
+    position: absolute;
+    top:2%;
+    left:1%;
+}
+
+.backtohomebtn:hover{
+    color:white;
+    background-color:indianred;
+    cursor: pointer;
+}
+
+
+.maindiv
+{
+    margin: auto;
+    width:60%;
+    color:white;
+    margin-top:3rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    background: transparent;
+}
+
+.image,.about
+{
+    margin-top: 2rem;
+}
+
+
+
+.profilepage
+{
+    background: transparent;
+}
+
+
+.nearbyimgs
+{
+    border-radius: 50%;
+    width:40%;
+    height: 5rem;
+}
+
+.bottomdiv
+{
+    margin-top:4rem;
+}
+
+.bottomdiv h3{
+    margin-bottom: 2rem;
+    border:3px solid gold;
+    width:12rem;
+    padding-left: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-top: 0;
+    border-right: 0;
+}
+
+.editbtn{
+    margin-top: 1rem;
+}
+
+.nearbyimgs
+{
+    border:2px solid gold;
+}
+
+.profileheading
+{
+    margin:auto;
+    margin-top:1rem;
+    border:4px solid red;
+    padding-bottom: 0.2rem;
+    width:3rem;
+    border-top:0;
+    border-right:0;
+    border-left:0;
+    
+}
+
+.abtheading
+{
+    margin: auto;
+    border:3px solid goldenrod;
+    width:2.5rem;
+    padding-left: 0;
+    border-top:0;
+    border-left:0;
+    border-right: 0;
+   
+}
+
+.bottomdiv p{
+    margin-top:0.75rem;
+    margin-left:1rem;
+}
+
+
+
+@media screen and (max-width:991px){
+    .image{
+        border:0;
+    }
+
+    .editbtn 
+  {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nearbyimgs
+  {
+     width:70%;
+  }
+
+  .topdiv .profileimg
+{
+   
+     margin-left:5rem;
+    
+}
+
+
+ 
+}
+
+@media screen and (max-width:550px){
+
+.topdiv .profileimg
+{
+     width:100%;
+    border-radius: 50%;
+     height:100%;
+     margin-left: 1.5rem;
+     border:2px solid indianred;
+}
+
+}
+
+@media screen and (max-width:767px){
+
+    .nearbyimgs
+    {
+       width:70%;
+    }
+
+    .bottomdiv p{
+        margin-top:0.75rem;
+    }
+
+}
+
+@media screen and (max-width:576px){
+    .nearbyimgs
+    {
+       width:40%;
+    }
+
+    .bottomdiv p{
+        margin-top:0.75rem;
+        margin-left:1rem;
+    }
+}
+

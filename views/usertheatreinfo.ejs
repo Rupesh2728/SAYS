@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Theatre</title>
+    <link rel="stylesheet" href="/css/theatredashboard/usertheatreinfo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/3e893105a3.js"crossorigin="anonymous"></script>
+</head>
+<body style="background-color: black;">
+  
+
+  <nav class="navbar navbar-expand-lg" style="background-color: #221f1f;font-size: 1.1rem;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: flex;justify-content: space-between;">
+              <div class="navbarlinks">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/tdashboard" style="color: gold;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/tmdashboard" style="color: gold;">Movies</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tsnackspage"style="color: gold;">Snacks</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/tschedule" style="color: gold;">Theatre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/usertheatreinfo" style="color: gold;">About Theatre</a>
+                      </li>
+
+                  </ul>
+              </div>
+
+              <div class="profile" style="margin-right: 5rem;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 50%;color: gold;">
+                           <img src="https://sambadenglish.com/wp-content/uploads/2021/03/s3.jpg" alt="" style="border-radius: 50%;width: 2.5rem;height: 2.5rem;border:1.5px solid gold">
+                        </a>
+                        <ul class="dropdown-menu" style="width: 2rem !important;">
+                          <li><a class="dropdown-item" href="/tprofile">Profile</a></li>
+                          <li><a class="dropdown-item" href="/tprofile/teditprofile">Edit Profile</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="/Tsignout">Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>         
+              </div>    
+            </ul>        
+          </div>
+        </div>
+      </nav>
+
+
+    <div class="maindiv">
+        <h1 style="color:gold">About Theatre Form</h1>
+	<form action="/usertheatreinfo" method="post">
+		<div class="div1">
+        <div class="subdiv1">
+         <label for="theatreName">Theatre Name:</label>
+		 <input type="text" class="theatreName" name="theatreName" value="<%=tname%>" readonly><br><br>
+        </div>
+		
+		<div class="subdiv2">
+        <label for="imgurl">Theatre Image URL1:</label>
+		<input type="text" class="theatreimgurl1" name="theatreimgurl1" readonly><br><br>
+        </div>
+        </div>
+		
+		<div class="div2">
+        <div class="subdiv1">
+            <label for="imgurl">Theatre Image URL2:</label>
+            <input type="text" class="theatreimgurl2" name="theatreimgurl2" readonly><br><br>
+        </div>
+        
+         <div class="subdiv2">
+            <label for="imgurl">Theatre Image URL3:</label>
+		    <input type="text" class="theatreimgurl3" name="theatreimgurl3" readonly><br><br>	
+         </div>
+        </div>
+
+		<div class="div3">
+            <div class="subdiv1">
+                <label for="screentype">Screen Type:</label>
+		        <input type="text" class="screentype" name="screentype" style="width:10rem" readonly><br><br>
+            </div>
+		
+		<div class="subdiv2">
+        <label for="snacksinfo">Snacks:</label>
+        <select name="snacks" class="snacks" disabled>
+            <option value="Available">Available</option>
+            <option value="Not Available">Not Available</option>
+        </select>
+        </div>
+
+        <div class="subdiv3">
+            <label for="Ttype">Theatre Type:</label>
+            <select name="Ttype" class="Ttype" disabled>
+                <option value="AC">AC</option>
+                <option value="Non-AC">Non-AC</option>
+            </select>
+        </div>
+
+        <div class="subdiv4">
+            <label for="sound">Sound:</label>
+                <select name="sound" class="sound" disabled>
+                    <option value="AC">Dolby Digital 5.1/AC-3</option>
+                    <option value="DTS">DTS</option>
+                    <option value="DSX">DSX</option>
+                    <option value="DSX-2">DSX-2</option>
+                    <option value="Dolby Atmos">Dolby Atmos</option>
+                </select>
+           </div>
+        </div>
+
+        
+       <div class="div5">
+        <label for="about">About:</label>
+        <textarea class="about" name="about" rows="5" cols="100" readonly></textarea>
+        <br><br>
+       </div>
+
+     <div class="div6">
+        <button type="submit" class="submitbtn" disabled>Submit</button>
+        <button type="button" class="editbtn" style="margin-left: 1rem;width:5rem;background-color: green;color: white;border:0;border-radius: 4px;">Edit</button>
+     </div>
+	</form>
+
+    </div>
+      
+
+<script src="/js/theatredashboard/usertheatreinfo.js"></script>
+</body>
+</html>

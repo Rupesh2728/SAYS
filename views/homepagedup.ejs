@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%- include('homepageheaderlinks') %>
+       
+<title>Home</title>
+
+</head>
+<body>
+
+  <%- include('mobilenavbar') %>
+
+      <div class="mobilenavbarfirstsection" style="width:90%;">
+        <div class="container">
+            <div class="row h-100 align-items-center">
+              <section id="mobilesubnavbarfirstsection" class="d-flex align-items-center" style="background-image: url('https://c1.wallpaperflare.com/preview/330/534/353/seat-chair-theatre-dark.jpg') !important;">
+                            <div class="row">
+                              <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center contentdiv">
+                                <h1>Don't you love a cushioned seat in a corner, by the fireside, with your slippers on your feet?</h1>
+                                <h3>Reserve your Seats to Experience the Quality of the movie that make you stop & stare</h3>
+                                <div><a href="/movies" class="booknowbtn scrollto">Book now</a></div>
+                              </div>
+                              <div class="col-lg-6 order-1 order-lg-2 firstsection-img">
+                                <div id="carouselExampleInterval" class="carousel slide slidebartickets" data-bs-ride="carousel">
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="1500">
+                                      <img src="https://thumbs.dreamstime.com/z/movie-wall-your-own-photos-36016811.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2500">
+                                      <img src="https://cdn.grabon.in/gograbon/images/web-images/uploads/1618571888087/movie-ticket-offers.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                      <img src="https://assetscdn1.paytm.com/images/catalog/view_item/942171/1646452176861.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>                       
+                      </section>
+            </div>
+        </div>
+    </div>
+ 
+    </div>       
+  </div>
+    
+    
+    <%-include('laptopnavbardup') %>
+ 
+
+   
+    <section id="firstsection" class="d-flex topsection" style="background-color: #161d2f;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6  pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center contentdiv">
+            <h1>Don't you love a cushioned seat in a corner, by the fireside, with your slippers on your feet?</h1>
+            <h3>Reserve your Seats to Experience the Quality of the movie that make you stop & stare</h3>
+            <div><a href="/login" class="booknowbtn scrollto">Book now</a></div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 firstsection-img">
+            <div id="carouselExampleInterval" class="carousel slide slidebartickets" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1500">
+                  <img src="https://thumbs.dreamstime.com/z/movie-wall-your-own-photos-36016811.jpg" class="d-block w-100 bookticketsimg" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                  <img src="https://cdn.grabon.in/gograbon/images/web-images/uploads/1618571888087/movie-ticket-offers.jpg" class="d-block w-100 bookticketsimg" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="https://assetscdn1.paytm.com/images/catalog/view_item/942171/1646452176861.jpg" class="d-block w-100 bookticketsimg" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+    <main id="main"> 
+      <section id="firstsection" class="d-flex" style="background-color: #181616;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 firstsection-img">
+            <div id="carouselExampleInterval" class="carousel slide slidebarsnacks slidebartickets" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1500">
+                  <img src="https://miro.medium.com/max/1400/1*Ic13gSTEtkiIth4_MjJR8Q.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                  <img src="https://in.bmscdn.com/webin/static/group-halprice2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="https://b.zmtcdn.com/data/menus/180/19335180/9d7b8db90d56eeaa98a464c4c5a6fd7f.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6  pt-4 pt-lg-0 d-flex flex-column justify-content-center contentdiv">
+            <h1>If you are what you eat, then You only want to eat the good stuff ?</h1>
+              <h3>Don't Miss Your Movie Watch Time,Order your snack from your Seat</h3>
+              <div><a href="/login" class="ordersnackbtn scrollto">Order Your Snacks</a></div>
+          </div>
+          
+        </div>
+      </div>
+  </section>
+  
+  
+      <!-- ======= Clients Section ======= -->
+       <%- include('homepagepremiumclients',{premiumclients : premiumclients}) %>
+      <!-- End Clients Section -->
+  
+         
+     
+     <!-- ======= Counts Section ======= -->
+     <section id="counts" class="counts">
+      <div class="container">
+        <div class="text-center title">
+          <h3>What we have achieved so far</h3>
+        </div>
+  
+        <div class="row counters position-relative">
+  
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="1143" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Clients</p>
+          </div>
+  
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="999" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Number of Transactions made</p>
+          </div>
+  
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Client Review</p>
+          </div>
+  
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="75" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Website Support</p>
+          </div>
+  
+        </div>
+  
+      </div>
+    </section><!-- End Counts Section -->
+    </main><!-- End #main --> 
+  
+    <!-- ======= Footer ======= -->
+    <%- include('footerdup') %>
+    <!-- End Footer -->
+  
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <%-include('homepagescriptlinks') %>
+
+</body>
+</html>

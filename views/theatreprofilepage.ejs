@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/theatredashboard/theatreprofilepage.css">
+  <title>Theatre Profile Page</title>
+</head>
+
+<body background="https://c1.wallpaperflare.com/preview/330/534/353/seat-chair-theatre-dark.jpg">
+  <a href="/tdashboard"><button class="backtohomebtn">Back to home</button></a>
+  <div class="maindiv">
+
+    <div class="profilepage" style="display: flex;flex-direction: column;">
+      <h1 class="profileheading">Profile</h1>
+      <div class=" row topdiv" style="display: flex;">
+        <div class="col-lg-4 image">
+          <img
+            src="https://content3.jdmagicbox.com/comp/vijayawada/g8/0866px866.x866.150206151341.h1g8/catalogue/stbl-s-balaji-cine-villa-poranki-vijayawada-telugu-movies-ibmzlh5shx.jpg"
+            class="profileimg">
+        </div>
+
+
+        <div class="col-lg-5 about">
+          <div class="container">
+            <div class="row">
+              <!-- <h2 class="abtheading">About</h2> -->
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <p style="color: gold;"> Refernce Number</p>
+              </div>
+
+              <div class="col-lg-9 col-md-9 col-sm-12" >
+                <p id="REFnumber">SAYSTHEATRE---</p> 
+              </div>
+            </div>
+            <div class="row" style="margin-top: 2rem;">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <p style="color: gold;" >Address</p>
+              </div>
+
+              <div class="col-lg-9 col-md-9 col-sm-12">
+                <p id="Address">IIIT Sricity,Gnang Marg,517646</p>
+              </div>
+            </div>
+            <br>
+
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <p style="color: gold;">Theatre</p>
+              </div>
+
+              <div class="col-lg-9 col-md-9 col-sm-12" id="TheatreName">
+                ARS Cinemas
+              </div>
+            </div>
+            <br>
+
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <p style="color: gold;">Contact</p>
+              </div>
+
+              <div class="col-lg-9 col-md-9 col-sm-12"  id="phnNumber">
+                +91 9023443259
+              </div>
+            </div>
+            <br>
+
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <p style="color: gold;">MailId</p>
+              </div>
+
+              <div class="col-lg-9 col-md-9 col-sm-12" id="mailid">
+                SAYS@gmail.com
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <p style="color: gold;">License Number</p>
+              </div>
+
+              <div class="col-lg-9 col-md-9 col-sm-12" id="License_Number">
+                IMAX20
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+
+        <div class="col-lg-3 editbtn">
+          <a href="/tprofile/teditprofile"><button class="btn btn-primary editbtn">Edit Profile</button></a>
+
+        </div>
+      </div>
+
+      <div class="bottomdiv">
+        <h3 style="margin-left:1rem">Nearby Places</h3>
+        <div class="container">
+          <div class="row">
+
+            <% for(let i=0;i<nearbyplaces.length;i++) { %>
+              <div class=" col-lg-3 col-md-3 col-sm-3">
+                <img src="<%=nearbyplaces[i].pimg%>" class="nearbyimgs" alt="">
+                <p>
+                  <%=nearbyplaces[i].pname%>
+                </p>
+              </div>
+              <% } %>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="/js/theatredashboard/theatreprofilepage.js"></script>
+</body>
+
+</html>

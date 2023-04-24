@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Mania</title>
+    <link rel="stylesheet" href="/css/moviegame/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body background="https://c1.wallpaperflare.com/preview/330/534/353/seat-chair-theatre-dark.jpg" style="background-size: cover;">
+    
+    <a href="/home">
+        <div class="backbtn">
+            <button>Back To Home</button>
+        </div>
+    </a>
+    
+    <div class="mainheading">
+        <h1 style="color: wheat;">
+            Movie Mania
+        </h1>
+    </div>
+
+    <div class="subheading">
+        <h3 style="color:white">
+            Welcome to Movie Mania 
+        </h3>
+    </div>
+
+    <div class="about" style="color:white">
+        <p class="title">ABOUT</p>
+        <p class="desc">Movie knowledge refers to a person's familiarity with movies, 
+            including their history, genres, actors, directors, production, 
+            and cultural impact. This knowledge can include information about 
+            classic movies, modern films, and popular movie franchises.
+        </p>
+        <p class="desc2">
+            Challenging your Movie Knowledge in a thrilling contest 
+            with fellow film enthusiasts.Featuring a wide range of 
+            genres,this trivia provides an diverse and challenging 
+            experiance for all.This is Conducted only Weekly Once.
+            So Stay Tuned to SAYS for Updates....
+        </p>
+
+        <p class="desc3">So Why Late, Participate and Win Exciting Prizes....</p>
+    </div>
+    
+    <div class="startbtn" style="display: flex;justify-content: space-between;">      
+      
+        <button class="showtimebtn">
+          Its Show Time!
+        </button>
+        <button class="gotoleaderboard" style="margin-left:1rem">
+            LeaderBoard
+         </button>
+      
+    </div>
+
+    <div class="instructions">
+        <div class="instructionstitle"><h2>Rules and Regulations</h2></div>
+        <div class="instructionslist" style="display: flex;flex-direction: column;">
+            <div class="info"><span style="color: yellow">-></span> You will have only <span>15 seconds</span> per Question.</div>
+            <div class="info"><span style="color: yellow">-></span> Once Marked Answered Cannot be UnMarked.</div>
+            <div class="info"><span style="color: yellow">-></span> Once Time is Up. You cannot do any Marking</div>
+            <div class="info"><span style="color: yellow">-></span> You can't exit from the Game while you're playing.</div>
+            <div class="info"><span style="color: yellow">-></span> You'll get points on the basis of your correct answers.</div>
+            <div class="info"><span style="color: yellow">-></span> There will Be a LeaderBoard Maintained</div>
+            <div class="info"><span style="color: yellow">-></span> This is conducted only Weekly Once.So Stay tuned</div>
+
+            <div class="rewardinfo"><span style="color:yellow">***</span> There are Rewrards such as Free Movie Tickets or Cashback for Top 3 Contestents</div>         
+        </div>
+        
+        <div class="buttons" style="margin-top: 2rem;">
+            <button class="quitbtn">Exit Quiz</button>
+            <button class="continuebtn">Continue</button>
+        </div>
+    </div>
+
+    <div class="totaldiv" style="display: flex;">
+        <div class="timerbox" style="display: flex;flex-direction: column;">
+            <div class="time_left_txt">Time Left</div>
+            <div class="timer">
+                <div class="timer_sec"><span>15</span></div>
+            </div>
+
+        </div>
+        
+        <div class="quiz_box">
+            <header>
+                <div class="title">Let the show Begin....</div>
+            </header>
+            <section>
+                <div class="question">
+                  
+                </div>
+                <div class="option_list">
+                 
+                </div>
+            </section>
+    
+            <footer>
+                <div class="total_que">
+
+                </div>
+                <button class="next_btn">Next Que</button>
+            </footer>
+        </div>
+    </div>
+   
+
+    <div class="result_box">
+    <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+           
+        </div>
+        <div class="buttons">
+            <button class="gotoleaderboard">Leaderboard</button>
+        </div>
+    </div>
+
+    <p class="leaderboardtitle">LEADERBOARD</p>
+    <div class="leaderboard">
+        <div class="leaderboardtable">
+            
+        </div>
+        <button class="quit" style="margin: auto;">Quit Quiz</button>
+    </div>
+
+   
+    <script src="/js/moviegame/questions.js"></script>
+    <script src="/js/moviegame/script.js"></script>
+    <script src="/js/moviegame/playedornot.js"></script>
+
+</body>
+</html>
