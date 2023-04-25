@@ -5,8 +5,6 @@ const router = express.Router();
 const movieinfo = require("../../models/theatre/movieinfo");
 const rentalmovieinfo = require("../../models/theatre/rentalmovieslist");
 
-
-
 router.get("/", async function (req, res) {
   let rentalmoviearr = await movieinfo.find({});
   let value1 = await rentalmovieinfo.find({});
@@ -114,7 +112,7 @@ router.post("/adminrentalmovieinfo", async function (req, res) {
     console.log("Rental movies inserted ");
   }
 
-  res.redirect("/");
+  res.redirect("/adminmovies");
 });
 
 router.post("/adminremovemovie", async function (req, res) {
@@ -125,7 +123,7 @@ router.post("/adminremovemovie", async function (req, res) {
   await movieinfo.deleteOne({ MovieId: mid });
   await rentalmovieinfo.deleteMany({ MovieId: mid });
   console.log("Movie Removed by Admin");
-  res.redirect("/");
+  res.redirect("/adminmovies");
 });
 
 router.post("/getmovieinfo", async function (req, res) {
@@ -135,4 +133,4 @@ router.post("/getmovieinfo", async function (req, res) {
   res.json(movieobj);
 });
 
-  module.exports = router;
+module.exports = router;

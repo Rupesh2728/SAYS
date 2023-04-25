@@ -107,4 +107,3 @@ app.use("/adminmovies", adminmoviesroutes);
 app.use("/adminclient", adminclientroutes);
 app.use("/admintheatre", admintheatreroutes);
 app.use("/adminmassmail", adminmassmailroutes);
-
