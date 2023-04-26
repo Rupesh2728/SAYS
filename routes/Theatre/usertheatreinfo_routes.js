@@ -52,7 +52,7 @@ router.post("/", async function (req, res) {
         .save()
         .then(() => {
           console.log("Inserted a new document into Abouttheatre in database");
-          res.redirect("/");
+          res.redirect("/usertheatreinfo");
         })
         .catch((err) => {
           console.log(err);
@@ -71,7 +71,7 @@ router.post("/", async function (req, res) {
         .updateOne({ tReferenceNumber: req.cookies.currtheatrereffnum }, value[0])
         .then(() => {
           console.log("Updated User Movie theatre Info in database");
-          res.redirect("/");
+          res.redirect("/usertheatreinfo");
         })
         .catch((err) => {
           console.log(err);
